@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98D079381B94B4EF009C80F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D079371B94B4EF009C80F9 /* main.m */; };
+		98D0793B1B94B4EF009C80F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D0793A1B94B4EF009C80F9 /* AppDelegate.m */; };
+		98D079411B94B4F0009C80F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D0793F1B94B4F0009C80F9 /* Main.storyboard */; };
+		98D079431B94B4F0009C80F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D079421B94B4F0009C80F9 /* Images.xcassets */; };
+		98D079461B94B4F0009C80F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D079441B94B4F0009C80F9 /* LaunchScreen.xib */; };
+		98D0795C1B94BA18009C80F9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 98D0795B1B94BA18009C80F9 /* data.json */; };
+		98D0795F1B94BA71009C80F9 /* PlanetaTerra.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D0795E1B94BA71009C80F9 /* PlanetaTerra.m */; };
+		98D079621B94D1AB009C80F9 /* NSDictionary+KeyForObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D079611B94D1AB009C80F9 /* NSDictionary+KeyForObject.m */; };
+		98D079641B94DDA4009C80F9 /* PlanetaTerraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D079631B94DDA3009C80F9 /* PlanetaTerraTests.m */; };
+		98D079671B94E485009C80F9 /* ContinentesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D079661B94E485009C80F9 /* ContinentesTableViewController.m */; };
+		98D0796A1B94E48F009C80F9 /* PaisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D079691B94E48F009C80F9 /* PaisesTableViewController.m */; };
+		98D0796D1B94E49B009C80F9 /* PaisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D0796C1B94E49B009C80F9 /* PaisViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98D0794C1B94B4F1009C80F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D0792A1B94B4EE009C80F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D079311B94B4EF009C80F9;
+			remoteInfo = DesafioPlanetaTerra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98D079321B94B4EF009C80F9 /* DesafioPlanetaTerra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioPlanetaTerra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D079361B94B4EF009C80F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D079371B94B4EF009C80F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98D079391B94B4EF009C80F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98D0793A1B94B4EF009C80F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		98D079401B94B4F0009C80F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98D079421B94B4F0009C80F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		98D079451B94B4F0009C80F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		98D0794B1B94B4F1009C80F9 /* DesafioPlanetaTerraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioPlanetaTerraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D079501B94B4F1009C80F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D0795B1B94BA18009C80F9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		98D0795D1B94BA71009C80F9 /* PlanetaTerra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetaTerra.h; sourceTree = "<group>"; };
+		98D0795E1B94BA71009C80F9 /* PlanetaTerra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetaTerra.m; sourceTree = "<group>"; };
+		98D079601B94D1AB009C80F9 /* NSDictionary+KeyForObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KeyForObject.h"; sourceTree = "<group>"; };
+		98D079611B94D1AB009C80F9 /* NSDictionary+KeyForObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KeyForObject.m"; sourceTree = "<group>"; };
+		98D079631B94DDA3009C80F9 /* PlanetaTerraTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetaTerraTests.m; sourceTree = "<group>"; };
+		98D079651B94E485009C80F9 /* ContinentesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContinentesTableViewController.h; sourceTree = "<group>"; };
+		98D079661B94E485009C80F9 /* ContinentesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContinentesTableViewController.m; sourceTree = "<group>"; };
+		98D079681B94E48F009C80F9 /* PaisesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaisesTableViewController.h; sourceTree = "<group>"; };
+		98D079691B94E48F009C80F9 /* PaisesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaisesTableViewController.m; sourceTree = "<group>"; };
+		98D0796B1B94E49B009C80F9 /* PaisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaisViewController.h; sourceTree = "<group>"; };
+		98D0796C1B94E49B009C80F9 /* PaisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaisViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98D0792F1B94B4EF009C80F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D079481B94B4F1009C80F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98D079291B94B4EE009C80F9 = {
+			isa = PBXGroup;
+			children = (
+				98D079341B94B4EF009C80F9 /* DesafioPlanetaTerra */,
+				98D0794E1B94B4F1009C80F9 /* DesafioPlanetaTerraTests */,
+				98D079331B94B4EF009C80F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98D079331B94B4EF009C80F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98D079321B94B4EF009C80F9 /* DesafioPlanetaTerra.app */,
+				98D0794B1B94B4F1009C80F9 /* DesafioPlanetaTerraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98D079341B94B4EF009C80F9 /* DesafioPlanetaTerra */ = {
+			isa = PBXGroup;
+			children = (
+				98D079391B94B4EF009C80F9 /* AppDelegate.h */,
+				98D0793A1B94B4EF009C80F9 /* AppDelegate.m */,
+				98D0795D1B94BA71009C80F9 /* PlanetaTerra.h */,
+				98D0795E1B94BA71009C80F9 /* PlanetaTerra.m */,
+				98D079651B94E485009C80F9 /* ContinentesTableViewController.h */,
+				98D079661B94E485009C80F9 /* ContinentesTableViewController.m */,
+				98D079681B94E48F009C80F9 /* PaisesTableViewController.h */,
+				98D079691B94E48F009C80F9 /* PaisesTableViewController.m */,
+				98D0796B1B94E49B009C80F9 /* PaisViewController.h */,
+				98D0796C1B94E49B009C80F9 /* PaisViewController.m */,
+				98D079601B94D1AB009C80F9 /* NSDictionary+KeyForObject.h */,
+				98D079611B94D1AB009C80F9 /* NSDictionary+KeyForObject.m */,
+				98D0795B1B94BA18009C80F9 /* data.json */,
+				98D0793F1B94B4F0009C80F9 /* Main.storyboard */,
+				98D079421B94B4F0009C80F9 /* Images.xcassets */,
+				98D079441B94B4F0009C80F9 /* LaunchScreen.xib */,
+				98D079351B94B4EF009C80F9 /* Supporting Files */,
+			);
+			path = DesafioPlanetaTerra;
+			sourceTree = "<group>";
+		};
+		98D079351B94B4EF009C80F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98D079361B94B4EF009C80F9 /* Info.plist */,
+				98D079371B94B4EF009C80F9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98D0794E1B94B4F1009C80F9 /* DesafioPlanetaTerraTests */ = {
+			isa = PBXGroup;
+			children = (
+				98D079631B94DDA3009C80F9 /* PlanetaTerraTests.m */,
+				98D0794F1B94B4F1009C80F9 /* Supporting Files */,
+			);
+			path = DesafioPlanetaTerraTests;
+			sourceTree = "<group>";
+		};
+		98D0794F1B94B4F1009C80F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98D079501B94B4F1009C80F9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98D079311B94B4EF009C80F9 /* DesafioPlanetaTerra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D079551B94B4F1009C80F9 /* Build configuration list for PBXNativeTarget "DesafioPlanetaTerra" */;
+			buildPhases = (
+				98D0792E1B94B4EF009C80F9 /* Sources */,
+				98D0792F1B94B4EF009C80F9 /* Frameworks */,
+				98D079301B94B4EF009C80F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioPlanetaTerra;
+			productName = DesafioPlanetaTerra;
+			productReference = 98D079321B94B4EF009C80F9 /* DesafioPlanetaTerra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98D0794A1B94B4F1009C80F9 /* DesafioPlanetaTerraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D079581B94B4F1009C80F9 /* Build configuration list for PBXNativeTarget "DesafioPlanetaTerraTests" */;
+			buildPhases = (
+				98D079471B94B4F1009C80F9 /* Sources */,
+				98D079481B94B4F1009C80F9 /* Frameworks */,
+				98D079491B94B4F1009C80F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98D0794D1B94B4F1009C80F9 /* PBXTargetDependency */,
+			);
+			name = DesafioPlanetaTerraTests;
+			productName = DesafioPlanetaTerraTests;
+			productReference = 98D0794B1B94B4F1009C80F9 /* DesafioPlanetaTerraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98D0792A1B94B4EE009C80F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Marcos Trovilho";
+				TargetAttributes = {
+					98D079311B94B4EF009C80F9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					98D0794A1B94B4F1009C80F9 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 98D079311B94B4EF009C80F9;
+					};
+				};
+			};
+			buildConfigurationList = 98D0792D1B94B4EF009C80F9 /* Build configuration list for PBXProject "DesafioPlanetaTerra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98D079291B94B4EE009C80F9;
+			productRefGroup = 98D079331B94B4EF009C80F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98D079311B94B4EF009C80F9 /* DesafioPlanetaTerra */,
+				98D0794A1B94B4F1009C80F9 /* DesafioPlanetaTerraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98D079301B94B4EF009C80F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D079411B94B4F0009C80F9 /* Main.storyboard in Resources */,
+				98D079461B94B4F0009C80F9 /* LaunchScreen.xib in Resources */,
+				98D079431B94B4F0009C80F9 /* Images.xcassets in Resources */,
+				98D0795C1B94BA18009C80F9 /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D079491B94B4F1009C80F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98D0792E1B94B4EF009C80F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D0796D1B94E49B009C80F9 /* PaisViewController.m in Sources */,
+				98D0795F1B94BA71009C80F9 /* PlanetaTerra.m in Sources */,
+				98D079621B94D1AB009C80F9 /* NSDictionary+KeyForObject.m in Sources */,
+				98D0793B1B94B4EF009C80F9 /* AppDelegate.m in Sources */,
+				98D079671B94E485009C80F9 /* ContinentesTableViewController.m in Sources */,
+				98D0796A1B94E48F009C80F9 /* PaisesTableViewController.m in Sources */,
+				98D079381B94B4EF009C80F9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D079471B94B4F1009C80F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D079641B94DDA4009C80F9 /* PlanetaTerraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98D0794D1B94B4F1009C80F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98D079311B94B4EF009C80F9 /* DesafioPlanetaTerra */;
+			targetProxy = 98D0794C1B94B4F1009C80F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98D0793F1B94B4F0009C80F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98D079401B94B4F0009C80F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98D079441B94B4F0009C80F9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98D079451B94B4F0009C80F9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98D079531B94B4F1009C80F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		98D079541B94B4F1009C80F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98D079561B94B4F1009C80F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioPlanetaTerra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		98D079571B94B4F1009C80F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioPlanetaTerra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		98D079591B94B4F1009C80F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DesafioPlanetaTerraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioPlanetaTerra.app/DesafioPlanetaTerra";
+			};
+			name = Debug;
+		};
+		98D0795A1B94B4F1009C80F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DesafioPlanetaTerraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioPlanetaTerra.app/DesafioPlanetaTerra";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98D0792D1B94B4EF009C80F9 /* Build configuration list for PBXProject "DesafioPlanetaTerra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D079531B94B4F1009C80F9 /* Debug */,
+				98D079541B94B4F1009C80F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D079551B94B4F1009C80F9 /* Build configuration list for PBXNativeTarget "DesafioPlanetaTerra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D079561B94B4F1009C80F9 /* Debug */,
+				98D079571B94B4F1009C80F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		98D079581B94B4F1009C80F9 /* Build configuration list for PBXNativeTarget "DesafioPlanetaTerraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D079591B94B4F1009C80F9 /* Debug */,
+				98D0795A1B94B4F1009C80F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98D0792A1B94B4EE009C80F9 /* Project object */;
+}
