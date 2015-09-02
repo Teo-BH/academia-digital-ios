@@ -24,19 +24,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email ou nome do usuário:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJ7-0l-9sL">
-                                                <rect key="frame" x="190" y="40" width="220" height="21"/>
+                                                <rect key="frame" x="140" y="40" width="320" height="21"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="220" id="JEh-bI-cyE"/>
+                                                    <constraint firstAttribute="width" constant="320" id="JEh-bI-cyE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J1L-A5-tDa">
-                                                <rect key="frame" x="190" y="63" width="220" height="45"/>
+                                                <rect key="frame" x="140" y="63" width="320" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="bfS-id-7h3"/>
-                                                    <constraint firstAttribute="width" constant="220" id="mFb-2k-1lz"/>
+                                                    <constraint firstAttribute="width" constant="320" id="mFb-2k-1lz"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -45,19 +45,19 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxQ-tC-B7o">
-                                                <rect key="frame" x="190" y="128" width="220" height="21"/>
+                                                <rect key="frame" x="140" y="128" width="320" height="21"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="220" id="4Ie-q4-zLt"/>
+                                                    <constraint firstAttribute="width" constant="320" id="4Ie-q4-zLt"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fVK-uy-Z1b">
-                                                <rect key="frame" x="190" y="151" width="220" height="45"/>
+                                                <rect key="frame" x="140" y="151" width="320" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="6ee-Oh-kp0"/>
-                                                    <constraint firstAttribute="width" constant="220" id="gSH-ul-zm7"/>
+                                                    <constraint firstAttribute="width" constant="320" id="gSH-ul-zm7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
@@ -66,10 +66,10 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9W-qd-Bz2">
-                                                <rect key="frame" x="190" y="224" width="220" height="60"/>
+                                                <rect key="frame" x="140" y="224" width="320" height="60"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="220" id="Kj9-nJ-cAo"/>
+                                                    <constraint firstAttribute="width" constant="320" id="Kj9-nJ-cAo"/>
                                                     <constraint firstAttribute="height" constant="60" id="TKO-OT-mgD"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -151,15 +151,23 @@
                                         <action selector="addTaskTouched:" destination="HBH-sO-QdH" eventType="touchUpInside" id="S8T-ik-I8r"/>
                                     </connections>
                                 </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarefas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6L-IB-F9D">
+                                    <rect key="frame" x="272" y="23" width="57" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="Krb-pk-sAs" firstAttribute="leading" secondItem="r7a-Lq-c5V" secondAttribute="leading" constant="8" id="8om-ep-9AD"/>
                                 <constraint firstAttribute="trailing" secondItem="Krb-pk-sAs" secondAttribute="trailing" constant="8" id="AwV-7h-lbx"/>
                                 <constraint firstAttribute="bottom" secondItem="Krb-pk-sAs" secondAttribute="bottom" constant="5" id="VmF-ia-hBZ"/>
+                                <constraint firstItem="T6L-IB-F9D" firstAttribute="centerX" secondItem="r7a-Lq-c5V" secondAttribute="centerX" id="cFS-6q-iFo"/>
                                 <constraint firstAttribute="bottom" secondItem="dkU-cZ-Kgp" secondAttribute="bottom" constant="8" id="gRf-dh-ima"/>
                                 <constraint firstAttribute="trailing" secondItem="dkU-cZ-Kgp" secondAttribute="trailing" constant="8" id="hTm-sb-eRP"/>
                                 <constraint firstItem="Krb-pk-sAs" firstAttribute="top" secondItem="r7a-Lq-c5V" secondAttribute="top" constant="23" id="qhW-M6-TrE"/>
+                                <constraint firstAttribute="bottom" secondItem="T6L-IB-F9D" secondAttribute="bottom" constant="5" id="s6c-eD-sjg"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
@@ -169,22 +177,38 @@
                             </variation>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellID" textLabel="eqo-PC-B6M" style="IBUITableViewCellStyleDefault" id="EZg-kd-O0M">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCellID" id="EZg-kd-O0M" customClass="TaskTableViewCell">
                                 <rect key="frame" x="0.0" y="77" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EZg-kd-O0M" id="HZq-kI-0hO">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eqo-PC-B6M">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v34-EA-mMr">
+                                            <rect key="frame" x="16" y="11" width="511" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Prg-2O-XO9">
+                                            <rect key="frame" x="535" y="6" width="51" height="31"/>
+                                            <connections>
+                                                <action selector="taskDoneChanged:" destination="EZg-kd-O0M" eventType="valueChanged" id="e49-bJ-Sak"/>
+                                            </connections>
+                                        </switch>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Prg-2O-XO9" secondAttribute="trailing" constant="8" id="4DQ-Ch-4A4"/>
+                                        <constraint firstItem="Prg-2O-XO9" firstAttribute="leading" secondItem="v34-EA-mMr" secondAttribute="trailing" constant="8" id="Imf-4t-OuJ"/>
+                                        <constraint firstItem="Prg-2O-XO9" firstAttribute="centerY" secondItem="HZq-kI-0hO" secondAttribute="centerY" id="WVh-k8-kCB"/>
+                                        <constraint firstItem="v34-EA-mMr" firstAttribute="centerY" secondItem="HZq-kI-0hO" secondAttribute="centerY" id="fae-XP-Ab7"/>
+                                        <constraint firstItem="v34-EA-mMr" firstAttribute="leading" secondItem="HZq-kI-0hO" secondAttribute="leadingMargin" constant="8" id="xfg-sM-ZFn"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="taskDoneSwitch" destination="Prg-2O-XO9" id="GdR-nK-3Wc"/>
+                                    <outlet property="taskNameLabel" destination="v34-EA-mMr" id="TL4-Fm-SvO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

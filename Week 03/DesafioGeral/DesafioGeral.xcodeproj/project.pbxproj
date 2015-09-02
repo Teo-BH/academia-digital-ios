@@ -16,6 +16,8 @@
 		B1A963C91B972ACB0023E130 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A963C81B972ACB0023E130 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B1A963CC1B97451F0023E130 /* SecurityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A963CB1B97451F0023E130 /* SecurityHelper.m */; settings = {ASSET_TAGS = (); }; };
 		B1A963CF1B9762460023E130 /* TaskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A963CE1B9762460023E130 /* TaskTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B1A963D31B978D3E0023E130 /* TaskData.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A963D21B978D3E0023E130 /* TaskData.m */; settings = {ASSET_TAGS = (); }; };
+		B1A963D61B978FA50023E130 /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A963D51B978FA50023E130 /* TaskTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		B1A963CB1B97451F0023E130 /* SecurityHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityHelper.m; sourceTree = "<group>"; };
 		B1A963CD1B9762460023E130 /* TaskTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewController.h; sourceTree = "<group>"; };
 		B1A963CE1B9762460023E130 /* TaskTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewController.m; sourceTree = "<group>"; };
+		B1A963D11B978D3E0023E130 /* TaskData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskData.h; sourceTree = "<group>"; };
+		B1A963D21B978D3E0023E130 /* TaskData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskData.m; sourceTree = "<group>"; };
+		B1A963D41B978FA50023E130 /* TaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewCell.h; sourceTree = "<group>"; };
+		B1A963D51B978FA50023E130 /* TaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,10 @@
 				B1A963CB1B97451F0023E130 /* SecurityHelper.m */,
 				B1A963CD1B9762460023E130 /* TaskTableViewController.h */,
 				B1A963CE1B9762460023E130 /* TaskTableViewController.m */,
+				B1A963D11B978D3E0023E130 /* TaskData.h */,
+				B1A963D21B978D3E0023E130 /* TaskData.m */,
+				B1A963D41B978FA50023E130 /* TaskTableViewCell.h */,
+				B1A963D51B978FA50023E130 /* TaskTableViewCell.m */,
 			);
 			path = DesafioGeral;
 			sourceTree = "<group>";
@@ -164,8 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A963D31B978D3E0023E130 /* TaskData.m in Sources */,
 				B14B93C61B971F31000EC01A /* AppDelegate.m in Sources */,
 				B14B93C31B971F31000EC01A /* main.m in Sources */,
+				B1A963D61B978FA50023E130 /* TaskTableViewCell.m in Sources */,
 				B1A963CF1B9762460023E130 /* TaskTableViewController.m in Sources */,
 				B1A963C91B972ACB0023E130 /* LoginViewController.m in Sources */,
 				B1A963CC1B97451F0023E130 /* SecurityHelper.m in Sources */,

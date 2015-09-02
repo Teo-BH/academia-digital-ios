@@ -8,8 +8,10 @@
 
 #import "TaskTableViewController.h"
 #import "SecurityHelper.h"
+#import "TaskData.h"
+#import "TaskTableViewCell.h"
 
-#define CELL_ID @"CellID"
+#define CELL_ID @"TaskCellID"
 
 @interface TaskTableViewController ()
 
@@ -42,10 +44,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID forIndexPath:indexPath];
+    TaskTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID forIndexPath:indexPath];
     
-    NSString *task = [_data objectAtIndex:[indexPath row]];
-    [[cell textLabel] setText:task];
+    TaskData *task = [_data objectAtIndex:[indexPath row]];
+    [cell setTask:task];
     
     return cell;
 }
@@ -66,7 +68,8 @@
                                                          // obtém o dado digitado
                                                          UITextField *nameTextField = [[alert textFields] firstObject];
                                                          // armazena nos dados
-                                                         [_data addObject:nameTextField.text];
+                                                         TaskData *data = [[TaskData alloc] initWitName:nameTextField.text];
+                                                         [_data addObject:data];
                                                          // atualiza tableView
                                                          [[self tableView] reloadData];
                                                      }];
@@ -99,17 +102,18 @@
                                                                                 // configuração
                                                                                 [textField setPlaceholder:@"Descrição"];
                                                                                 // texto
-                                                                                [textField setText:[_data objectAtIndex:[indexPath row]]];
+                                                                                TaskData *task = [_data objectAtIndex:[indexPath row]];
+                                                                                [textField setText:[task name]];
                                                                             }];
                                                                             
                                                                             UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
                                                                                                                                style:UIAlertActionStyleCancel
                                                                                                                              handler:^(UIAlertAction *action) {
-                                                                                                                                 NSInteger index = [indexPath row];
                                                                                                                                  // obtém o dado digitado
                                                                                                                                  UITextField *nameTextField = [[alert textFields] firstObject];
                                                                                                                                  // armazena nos dados
-                                                                                                                                 _data[index] = nameTextField.text;
+                                                                                                                                 TaskData *task = [_data objectAtIndex:[indexPath row]];
+                                                                                                                                 [task setName:nameTextField.text];
                                                                                                                                  // atualiza tableView
                                                                                                                                  [[self tableView] reloadData];
                                                                                                                              }];
