@@ -8,6 +8,9 @@
 
 #import "LoginViewController.h"
 #import "SecurityHelper.h"
+#import "TaskTableViewController.h"
+
+#define TASK_VIEW_CONTROLLER @"TaskTableViewControllerID"
 
 @interface LoginViewController ()
 
@@ -69,6 +72,7 @@
     NSString *password = [[self loginPasswordTextField] text];
     BOOL result = [SecurityHelper loginWithUser:user withPassword:password];
     if (!result) {
+        // Exibe mensagem de falha de autenticação
         UIAlertController * alert=   [UIAlertController alertControllerWithTitle:@"Autenticação"
                                                                          message:@"Usuário ou senha inválidos"
                                                                   preferredStyle:UIAlertControllerStyleAlert];
@@ -81,7 +85,9 @@
         [alert addAction:okAction];
         [self presentViewController:alert animated:YES completion:nil];
     } else {
-        // TODO: próxima view...
+        // Próxima view via Storyboard
+        TaskTableViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:TASK_VIEW_CONTROLLER];
+        [self presentViewController:vc animated:YES completion:nil];
     }
 }
 

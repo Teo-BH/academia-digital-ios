@@ -11,5 +11,6 @@
 @interface SecurityHelper : NSObject
 
 +(BOOL)loginWithUser:(NSString *)user withPassword:(NSString *)password;
++(NSString *)userName;
 
 @end

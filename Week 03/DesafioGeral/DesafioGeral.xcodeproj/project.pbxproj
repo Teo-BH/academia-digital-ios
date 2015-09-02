@@ -15,6 +15,7 @@
 		B14B93D91B971F74000EC01A /* Readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B14B93D81B971F74000EC01A /* Readme.rtf */; settings = {ASSET_TAGS = (); }; };
 		B1A963C91B972ACB0023E130 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A963C81B972ACB0023E130 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B1A963CC1B97451F0023E130 /* SecurityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A963CB1B97451F0023E130 /* SecurityHelper.m */; settings = {ASSET_TAGS = (); }; };
+		B1A963CF1B9762460023E130 /* TaskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A963CE1B9762460023E130 /* TaskTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		B1A963C81B972ACB0023E130 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B1A963CA1B97451F0023E130 /* SecurityHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityHelper.h; sourceTree = "<group>"; };
 		B1A963CB1B97451F0023E130 /* SecurityHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityHelper.m; sourceTree = "<group>"; };
+		B1A963CD1B9762460023E130 /* TaskTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewController.h; sourceTree = "<group>"; };
+		B1A963CE1B9762460023E130 /* TaskTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				B1A963C81B972ACB0023E130 /* LoginViewController.m */,
 				B1A963CA1B97451F0023E130 /* SecurityHelper.h */,
 				B1A963CB1B97451F0023E130 /* SecurityHelper.m */,
+				B1A963CD1B9762460023E130 /* TaskTableViewController.h */,
+				B1A963CE1B9762460023E130 /* TaskTableViewController.m */,
 			);
 			path = DesafioGeral;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			files = (
 				B14B93C61B971F31000EC01A /* AppDelegate.m in Sources */,
 				B14B93C31B971F31000EC01A /* main.m in Sources */,
+				B1A963CF1B9762460023E130 /* TaskTableViewController.m in Sources */,
 				B1A963C91B972ACB0023E130 /* LoginViewController.m in Sources */,
 				B1A963CC1B97451F0023E130 /* SecurityHelper.m in Sources */,
 			);

@@ -12,7 +12,7 @@
 
 #define SECURITY_URL @"http://%@:%@@httpbin.org/basic-auth/%@/%@"
 #define SECURTIY_USER @"teo"
-#define SECURITY_PASSWORD @"praque12"
+#define SECURITY_PASSWORD @"12"
 
 +(BOOL)loginWithUser:(NSString *)user withPassword:(NSString *)password {
     NSString *urlText = [NSString stringWithFormat:SECURITY_URL, user, password, SECURTIY_USER, SECURITY_PASSWORD];
@@ -27,11 +27,18 @@
     
     if (error) {
         NSLog(@"Falha de autenticação: %@", error);
+        _userName = nil;
         return NO;
     } else {
         NSNumber *flag = [result objectForKey:@"authenticated"];
+        _userName = user;
         return [flag boolValue];
     }
 }
+
++(NSString *)userName {
+    return _userName;
+} static NSString *_userName = 0;
+
 
 @end
