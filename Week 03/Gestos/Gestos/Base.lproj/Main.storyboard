@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgL-vH-LBX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ke0-Qj-1U6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BfU-AW-Cuv">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6et-H0-cVo"/>
+                                    <constraint firstAttribute="height" constant="128" id="SAm-6e-kfc"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xLL-Wu-reT" appends="YES" id="c5b-7J-b5l"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="BfU-AW-Cuv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6g7-5I-ODE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MgL-vH-LBX" secondAttribute="trailing" constant="-20" id="94r-6N-e1Z"/>
+                            <constraint firstItem="MgL-vH-LBX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="NQG-nD-MWC"/>
+                            <constraint firstItem="MgL-vH-LBX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="YQi-jP-Smo"/>
+                            <constraint firstItem="BfU-AW-Cuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cer-Qj-np2"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WiP-aI-0OJ" appends="YES" id="CZl-MS-Zky"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="retangulo" destination="BfU-AW-Cuv" id="zdy-ms-m0W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="WiP-aI-0OJ">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="eFh-cr-kJq"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pinchGestureRecognizer id="xLL-Wu-reT">
+                    <connections>
+                        <action selector="pinchGesture:" destination="BYZ-38-t0r" id="Umc-vC-dQv"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+    </scenes>
+</document>
