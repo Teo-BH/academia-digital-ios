@@ -16,6 +16,8 @@
 
 @implementation ViewController
 
+#pragma mark - View Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -53,67 +55,81 @@
     NSLog(@"Tipos de mídia no Albúm de fotos tiradas: %@", albumType);
     
 }
+
+#pragma mark - Buttons
+
 - (IBAction)escolherImagem:(UIButton *)sender {
-    UIAlertController *alert = [UIAlertController
-                                alertControllerWithTitle:@"Escolha a origem"
-                                message:nil
-                                preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertController *alert = [self alertSheetController];
     
-    // camera
-    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        UIAlertAction *action = [UIAlertAction actionWithTitle:@"Camera"
-                                                         style:UIAlertActionStyleDefault
-                                                                handler:^(UIAlertAction * action)
-        {
-            UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-            [picker setSourceType:UIImagePickerControllerSourceTypeCamera];
-            [picker setDelegate:self];
-            [picker setAllowsEditing:YES];
-            [self presentViewController:picker animated:YES completion:nil];
-        }];
-        
-        [alert addAction:action];
-    }
-
-    // Photo Library
-    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
-        UIAlertAction *action = [UIAlertAction actionWithTitle:@"Biblioteca de fotos"
-                                                         style:UIAlertActionStyleDefault
-                                                       handler:^(UIAlertAction * action)
-                                 {
-                                     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-                                     [picker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-                                     [picker setDelegate:self];
-                                     [picker setAllowsEditing:YES];
-                                     [self presentViewController:picker animated:YES completion:nil];
-                                 }];
-        
-        [alert addAction:action];
-    }
-
-    // Saved Photos Album
-    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
-        UIAlertAction *action = [UIAlertAction actionWithTitle:@"Álbum de fotos"
-                                                         style:UIAlertActionStyleDefault
-                                                       handler:^(UIAlertAction * action)
-                                 {
-                                     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-                                     [picker setSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
-                                     [picker setDelegate:self];
-                                     [picker setAllowsEditing:YES];
-                                     [self presentViewController:picker animated:YES completion:nil];
-                                 }];
-        
-        [alert addAction:action];
+    UIImagePickerControllerSourceType sourceTypes[] = {
+        UIImagePickerControllerSourceTypeCamera,
+        UIImagePickerControllerSourceTypePhotoLibrary,
+        UIImagePickerControllerSourceTypeSavedPhotosAlbum
+    };
+    
+    for (int i = 0; i < 3; i++) {
+        UIImagePickerControllerSourceType sourceType = sourceTypes[i];
+        if ([UIImagePickerController isSourceTypeAvailable:sourceType]) {
+            UIAlertAction *action = [self alertActionForSourceType:sourceTypes[i]];
+            [alert addAction:action];
+        }
     }
     
     // Exibe o alert
     [self presentViewController:alert animated:YES completion:nil];
 }
 
+
+-(UIAlertAction *)alertActionForSourceType:(UIImagePickerControllerSourceType)sourceType {
+    void (^handler)(UIAlertAction *) = ^(UIAlertAction *action) {
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        [picker setSourceType:sourceType];
+        [picker setDelegate:self];
+        [picker setAllowsEditing:YES];
+        [self presentViewController:picker animated:YES completion:nil];
+    };
+    
+    NSString *sheetTitle = [self titleForSheetWithSourceType:sourceType];
+    
+    return [UIAlertAction actionWithTitle:sheetTitle
+                                    style:UIAlertActionStyleDefault
+                                  handler:handler];
+}
+
+-(UIAlertController *)alertSheetController {
+    UIAlertController *result = [UIAlertController
+                                 alertControllerWithTitle:@"Escolha a origem"
+                                 message:nil
+                                 preferredStyle:UIAlertControllerStyleActionSheet];
+    return result;
+}
+
+-(NSString *)titleForSheetWithSourceType:(UIImagePickerControllerSourceType)sourceType {
+    switch (sourceType) {
+        case UIImagePickerControllerSourceTypeCamera:
+            return @"Camera";
+        case UIImagePickerControllerSourceTypePhotoLibrary:
+            return @"Biblioteca de fotos";
+        case UIImagePickerControllerSourceTypeSavedPhotosAlbum:
+            return @"Álbum de fotos";
+        default:
+            return nil;
+    }
+}
+
+#pragma mark - UIImageViewPickerController Delegate
+
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
-    UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
     [[self imageView] setImage:image];
+    
+    // Fecha o ImagePicker
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    // Fecha o ImagePicker
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
