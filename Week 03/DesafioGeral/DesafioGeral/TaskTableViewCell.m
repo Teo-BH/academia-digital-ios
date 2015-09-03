@@ -18,8 +18,22 @@
 @implementation TaskTableViewCell
 
 -(void)setTask:(TaskData *)task {
+    // Define os dados
     [[self taskNameLabel] setText:[task name]];
     [[self taskDoneSwitch] setOn:[task done]];
+
+    // Formatação do nome
+    // TODO: colocar sublinhado....
+    /*
+    if ([task done]) {
+        NSMutableAttributedString *result = [[NSMutableAttributedString alloc] initWithString:[task name]];
+        [result addAttribute:NSStrikethroughStyleAttributeName
+                       value:@1
+                       range:NSMakeRange(0, self.taskNameLabel.frame.size.width)];
+    }
+    */
+    
+    // Define a propriedade
     _task = task;
 }
 
