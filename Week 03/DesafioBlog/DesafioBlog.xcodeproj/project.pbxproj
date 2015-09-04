@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1993AD81B9A06D7009F243E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993AD71B9A06D7009F243E /* main.m */; };
+		B1993ADB1B9A06D7009F243E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993ADA1B9A06D7009F243E /* AppDelegate.m */; };
+		B1993ADE1B9A06D7009F243E /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993ADD1B9A06D7009F243E /* PostViewController.m */; };
+		B1993AE11B9A06D7009F243E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1993ADF1B9A06D7009F243E /* Main.storyboard */; };
+		B1993AE31B9A06D7009F243E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1993AE21B9A06D7009F243E /* Assets.xcassets */; };
+		B1993AE61B9A06D7009F243E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1993AE41B9A06D7009F243E /* LaunchScreen.storyboard */; };
+		B1993AEE1B9A0722009F243E /* readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B1993AED1B9A0722009F243E /* readme.rtf */; settings = {ASSET_TAGS = (); }; };
+		B1993AF11B9A0A38009F243E /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993AF01B9A0A38009F243E /* Post.m */; settings = {ASSET_TAGS = (); }; };
+		B1993AF41B9A0B47009F243E /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993AF31B9A0B47009F243E /* Comment.m */; settings = {ASSET_TAGS = (); }; };
+		B1993AF81B9A0CEB009F243E /* PostRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993AF71B9A0CEB009F243E /* PostRepository.m */; settings = {ASSET_TAGS = (); }; };
+		B1993AFB1B9A171A009F243E /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993AFA1B9A171A009F243E /* PostTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		B1993AFE1B9A20D2009F243E /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993AFD1B9A20D2009F243E /* CommentViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B1993B011B9A296D009F243E /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993B001B9A296D009F243E /* CommentTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		B1993B041B9A2F3D009F243E /* WebPostRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993B031B9A2F3D009F243E /* WebPostRepository.m */; settings = {ASSET_TAGS = (); }; };
+		B1993B071B9A30CB009F243E /* CachePostRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = B1993B061B9A30CB009F243E /* CachePostRepository.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1993AD31B9A06D7009F243E /* DesafioBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1993AD71B9A06D7009F243E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1993AD91B9A06D7009F243E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1993ADA1B9A06D7009F243E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1993ADC1B9A06D7009F243E /* PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		B1993ADD1B9A06D7009F243E /* PostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		B1993AE01B9A06D7009F243E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1993AE21B9A06D7009F243E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1993AE51B9A06D7009F243E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1993AE71B9A06D7009F243E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1993AED1B9A0722009F243E /* readme.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = readme.rtf; sourceTree = "<group>"; };
+		B1993AEF1B9A0A38009F243E /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		B1993AF01B9A0A38009F243E /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		B1993AF21B9A0B47009F243E /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		B1993AF31B9A0B47009F243E /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		B1993AF61B9A0CEB009F243E /* PostRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostRepository.h; sourceTree = "<group>"; };
+		B1993AF71B9A0CEB009F243E /* PostRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostRepository.m; sourceTree = "<group>"; };
+		B1993AF91B9A171A009F243E /* PostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		B1993AFA1B9A171A009F243E /* PostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
+		B1993AFC1B9A20D2009F243E /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		B1993AFD1B9A20D2009F243E /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		B1993AFF1B9A296D009F243E /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		B1993B001B9A296D009F243E /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		B1993B021B9A2F3D009F243E /* WebPostRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPostRepository.h; sourceTree = "<group>"; };
+		B1993B031B9A2F3D009F243E /* WebPostRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPostRepository.m; sourceTree = "<group>"; };
+		B1993B051B9A30CB009F243E /* CachePostRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachePostRepository.h; sourceTree = "<group>"; };
+		B1993B061B9A30CB009F243E /* CachePostRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachePostRepository.m; sourceTree = "<group>"; };
+		B1993B091B9A3BC5009F243E /* PostRepositoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostRepositoryProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1993AD01B9A06D7009F243E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1993ACA1B9A06D7009F243E = {
+			isa = PBXGroup;
+			children = (
+				B1993AD51B9A06D7009F243E /* DesafioBlog */,
+				B1993AD41B9A06D7009F243E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1993AD41B9A06D7009F243E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1993AD31B9A06D7009F243E /* DesafioBlog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1993AD51B9A06D7009F243E /* DesafioBlog */ = {
+			isa = PBXGroup;
+			children = (
+				B1993AED1B9A0722009F243E /* readme.rtf */,
+				B1993AF51B9A0CCE009F243E /* Blog */,
+				B1993AD91B9A06D7009F243E /* AppDelegate.h */,
+				B1993ADA1B9A06D7009F243E /* AppDelegate.m */,
+				B1993ADC1B9A06D7009F243E /* PostViewController.h */,
+				B1993ADD1B9A06D7009F243E /* PostViewController.m */,
+				B1993AF91B9A171A009F243E /* PostTableViewCell.h */,
+				B1993AFA1B9A171A009F243E /* PostTableViewCell.m */,
+				B1993AFC1B9A20D2009F243E /* CommentViewController.h */,
+				B1993AFD1B9A20D2009F243E /* CommentViewController.m */,
+				B1993AFF1B9A296D009F243E /* CommentTableViewCell.h */,
+				B1993B001B9A296D009F243E /* CommentTableViewCell.m */,
+				B1993ADF1B9A06D7009F243E /* Main.storyboard */,
+				B1993AE21B9A06D7009F243E /* Assets.xcassets */,
+				B1993AE41B9A06D7009F243E /* LaunchScreen.storyboard */,
+				B1993AE71B9A06D7009F243E /* Info.plist */,
+				B1993AD61B9A06D7009F243E /* Supporting Files */,
+			);
+			path = DesafioBlog;
+			sourceTree = "<group>";
+		};
+		B1993AD61B9A06D7009F243E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1993AD71B9A06D7009F243E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1993AF51B9A0CCE009F243E /* Blog */ = {
+			isa = PBXGroup;
+			children = (
+				B1993AEF1B9A0A38009F243E /* Post.h */,
+				B1993AF01B9A0A38009F243E /* Post.m */,
+				B1993AF21B9A0B47009F243E /* Comment.h */,
+				B1993AF31B9A0B47009F243E /* Comment.m */,
+				B1993AF61B9A0CEB009F243E /* PostRepository.h */,
+				B1993AF71B9A0CEB009F243E /* PostRepository.m */,
+				B1993B081B9A34F2009F243E /* Concrete */,
+			);
+			name = Blog;
+			sourceTree = "<group>";
+		};
+		B1993B081B9A34F2009F243E /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				B1993B091B9A3BC5009F243E /* PostRepositoryProtocol.h */,
+				B1993B021B9A2F3D009F243E /* WebPostRepository.h */,
+				B1993B031B9A2F3D009F243E /* WebPostRepository.m */,
+				B1993B051B9A30CB009F243E /* CachePostRepository.h */,
+				B1993B061B9A30CB009F243E /* CachePostRepository.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1993AD21B9A06D7009F243E /* DesafioBlog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1993AEA1B9A06D7009F243E /* Build configuration list for PBXNativeTarget "DesafioBlog" */;
+			buildPhases = (
+				B1993ACF1B9A06D7009F243E /* Sources */,
+				B1993AD01B9A06D7009F243E /* Frameworks */,
+				B1993AD11B9A06D7009F243E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioBlog;
+			productName = DesafioBlog;
+			productReference = B1993AD31B9A06D7009F243E /* DesafioBlog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1993ACB1B9A06D7009F243E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Teobaldo Mauro de Moura";
+				TargetAttributes = {
+					B1993AD21B9A06D7009F243E = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = S5S8JD5V3E;
+					};
+				};
+			};
+			buildConfigurationList = B1993ACE1B9A06D7009F243E /* Build configuration list for PBXProject "DesafioBlog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1993ACA1B9A06D7009F243E;
+			productRefGroup = B1993AD41B9A06D7009F243E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1993AD21B9A06D7009F243E /* DesafioBlog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1993AD11B9A06D7009F243E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1993AE61B9A06D7009F243E /* LaunchScreen.storyboard in Resources */,
+				B1993AE31B9A06D7009F243E /* Assets.xcassets in Resources */,
+				B1993AEE1B9A0722009F243E /* readme.rtf in Resources */,
+				B1993AE11B9A06D7009F243E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1993ACF1B9A06D7009F243E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1993ADE1B9A06D7009F243E /* PostViewController.m in Sources */,
+				B1993B011B9A296D009F243E /* CommentTableViewCell.m in Sources */,
+				B1993ADB1B9A06D7009F243E /* AppDelegate.m in Sources */,
+				B1993AD81B9A06D7009F243E /* main.m in Sources */,
+				B1993B041B9A2F3D009F243E /* WebPostRepository.m in Sources */,
+				B1993AFB1B9A171A009F243E /* PostTableViewCell.m in Sources */,
+				B1993AFE1B9A20D2009F243E /* CommentViewController.m in Sources */,
+				B1993B071B9A30CB009F243E /* CachePostRepository.m in Sources */,
+				B1993AF41B9A0B47009F243E /* Comment.m in Sources */,
+				B1993AF11B9A0A38009F243E /* Post.m in Sources */,
+				B1993AF81B9A0CEB009F243E /* PostRepository.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1993ADF1B9A06D7009F243E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1993AE01B9A06D7009F243E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1993AE41B9A06D7009F243E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1993AE51B9A06D7009F243E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1993AE81B9A06D7009F243E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B1993AE91B9A06D7009F243E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1993AEB1B9A06D7009F243E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioBlog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.DesafioBlog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B1993AEC1B9A06D7009F243E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioBlog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.DesafioBlog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1993ACE1B9A06D7009F243E /* Build configuration list for PBXProject "DesafioBlog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1993AE81B9A06D7009F243E /* Debug */,
+				B1993AE91B9A06D7009F243E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1993AEA1B9A06D7009F243E /* Build configuration list for PBXNativeTarget "DesafioBlog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1993AEB1B9A06D7009F243E /* Debug */,
+				B1993AEC1B9A06D7009F243E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1993ACB1B9A06D7009F243E /* Project object */;
+}
