@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Arquivo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flg-qO-nVO">
+                                <rect key="frame" x="20" y="20" width="430" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status Arquivo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccF-UZ-JNt">
+                                <rect key="frame" x="20" y="67" width="430" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status Copia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPl-5u-qrW">
+                                <rect key="frame" x="20" y="163" width="430" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijU-Jn-TvW">
+                                <rect key="frame" x="463" y="67" width="117" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="HXr-Ja-Esk"/>
+                                </constraints>
+                                <state key="normal" title="Copiar Arquivo"/>
+                                <connections>
+                                    <action selector="copiarArquivoTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W2h-ZV-J1H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C60-SH-FeZ">
+                                <rect key="frame" x="463" y="163" width="117" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="mT4-Pd-GuP"/>
+                                </constraints>
+                                <state key="normal" title="Apagar TUDO"/>
+                                <connections>
+                                    <action selector="apagarTudoTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUV-wX-17y"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pxy-7j-D7q">
+                                <rect key="frame" x="20" y="111" width="560" height="29"/>
+                                <segments>
+                                    <segment title="Documentos"/>
+                                    <segment title="Cache"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArG-ZV-4tu">
+                                <rect key="frame" x="463" y="20" width="117" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="YLt-Ro-BS8"/>
+                                </constraints>
+                                <state key="normal" title="Carregar Arquivo"/>
+                                <connections>
+                                    <action selector="carregarArquivoTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vah-IC-2wf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KPl-5u-qrW" firstAttribute="top" secondItem="Pxy-7j-D7q" secondAttribute="bottom" constant="24" id="1aa-No-rAl"/>
+                            <constraint firstItem="KPl-5u-qrW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2VT-ft-KDO"/>
+                            <constraint firstItem="C60-SH-FeZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8iW-6y-iqs"/>
+                            <constraint firstItem="Pxy-7j-D7q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Hbs-L3-OKt"/>
+                            <constraint firstItem="flg-qO-nVO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="InK-3m-bJ9"/>
+                            <constraint firstItem="flg-qO-nVO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="O8a-Po-nkG"/>
+                            <constraint firstItem="ArG-ZV-4tu" firstAttribute="leading" secondItem="flg-qO-nVO" secondAttribute="trailing" constant="13" id="Q8e-eu-SNf"/>
+                            <constraint firstItem="ijU-Jn-TvW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SrN-I3-Qgq"/>
+                            <constraint firstItem="ArG-ZV-4tu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="UIl-dt-hxe"/>
+                            <constraint firstItem="ArG-ZV-4tu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XH6-d4-WHC"/>
+                            <constraint firstItem="ccF-UZ-JNt" firstAttribute="top" secondItem="flg-qO-nVO" secondAttribute="bottom" constant="26" id="bAV-4R-DDE"/>
+                            <constraint firstItem="ijU-Jn-TvW" firstAttribute="top" secondItem="ArG-ZV-4tu" secondAttribute="bottom" constant="17" id="bXe-Pd-wwg"/>
+                            <constraint firstItem="ijU-Jn-TvW" firstAttribute="leading" secondItem="ccF-UZ-JNt" secondAttribute="trailing" constant="13" id="eui-Rc-088"/>
+                            <constraint firstItem="ccF-UZ-JNt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eyy-UN-Wmv"/>
+                            <constraint firstItem="C60-SH-FeZ" firstAttribute="top" secondItem="Pxy-7j-D7q" secondAttribute="bottom" constant="24" id="gof-3h-MT8"/>
+                            <constraint firstItem="C60-SH-FeZ" firstAttribute="leading" secondItem="KPl-5u-qrW" secondAttribute="trailing" constant="13" id="mAk-oc-HdF"/>
+                            <constraint firstItem="Pxy-7j-D7q" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="o44-2X-9ft"/>
+                            <constraint firstItem="Pxy-7j-D7q" firstAttribute="top" secondItem="ijU-Jn-TvW" secondAttribute="bottom" constant="14" id="pwP-6M-hhz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="apagarTudoButton" destination="C60-SH-FeZ" id="Lxv-Ke-WaS"/>
+                        <outlet property="carregarArquivoButton" destination="ArG-ZV-4tu" id="NeC-CC-CF7"/>
+                        <outlet property="copiarAquivoButton" destination="ijU-Jn-TvW" id="2qi-eE-OKB"/>
+                        <outlet property="destinoSegment" destination="Pxy-7j-D7q" id="SBa-Zq-CZf"/>
+                        <outlet property="nomeArquivoLabel" destination="flg-qO-nVO" id="0KK-x5-7a6"/>
+                        <outlet property="statusArquivoLabel" destination="ccF-UZ-JNt" id="tF6-5T-J1A"/>
+                        <outlet property="statusCopiaLabel" destination="KPl-5u-qrW" id="PwZ-D8-hh8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+    </scenes>
+</document>
