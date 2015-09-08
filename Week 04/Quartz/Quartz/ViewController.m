@@ -81,8 +81,19 @@ typedef NS_ENUM(NSInteger, TimeType) {
 }
 
 -(void)elipseOrangeView {
-    CGFloat height = self.orangeView.frame.size.height;
-    [[[self orangeView] layer] setCornerRadius:height / 2];
+    // Sem animação
+    //CGFloat height = self.orangeView.frame.size.height;
+    //[[[self orangeView] layer] setCornerRadius:height / 2];
+    
+    // borda arredondada no relório
+    CABasicAnimation *corner = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
+    [corner setToValue:@(self.orangeView.frame.size.height / 2)];
+    [corner setDuration:5];
+    // mantendo o estado da animação
+    [corner setRemovedOnCompletion:NO];
+    [corner setFillMode:kCAFillModeForwards];
+    
+    [self.orangeView.layer addAnimation:corner forKey:nil];
 }
 
 -(CGRect)frameCenterPointer:(CGRect)pointerFrame viewRelativa:(UIView *)view {
