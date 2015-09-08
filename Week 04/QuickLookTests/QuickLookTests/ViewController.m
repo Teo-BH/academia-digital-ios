@@ -31,6 +31,11 @@
 }
 
 - (IBAction)openQuickLook:(UIButton *)sender {
+    // Verifica se o arquivo pode ser aberto no QuickLook
+    if ([QLPreviewController canPreviewItem:_itens[0]]) {
+        NSLog(@"PDF pode ser visualizado");
+    }
+    
     QLPreviewController *controller = [[QLPreviewController alloc] init];
     [controller setDataSource:self];
     [self presentViewController:controller animated:YES completion:nil];
