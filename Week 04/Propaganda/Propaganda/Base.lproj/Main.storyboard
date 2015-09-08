@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="wh9-8t-LNu">
+                                <rect key="frame" x="140" y="526" width="320" height="66"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zvd-DG-jZt"/>
+                                </connections>
+                            </adBannerView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" adType="mediumRect" translatesAutoresizingMaskIntoConstraints="NO" id="Fco-Qm-Jmm">
+                                <rect key="frame" x="150" y="175" width="300" height="250"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vmo-oQ-gmz"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fco-Qm-Jmm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TSX-gt-N3g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wh9-8t-LNu" secondAttribute="bottom" constant="8" id="fJz-7z-DO1"/>
+                            <constraint firstItem="wh9-8t-LNu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nFW-cv-cSw"/>
+                            <constraint firstItem="Fco-Qm-Jmm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r03-gD-RIc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+    </scenes>
+</document>
