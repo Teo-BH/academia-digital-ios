@@ -76,9 +76,13 @@
     [[self mapView] removeOverlays:[[self mapView] overlays]];
     [[self mapView] addOverlay:circle];
     
+    // Outros overlays
+    // MKPolygon -> MKPolygonRenderer
+    // MKPolyline -> MKPolylineRenderer
+    
     // Monitorar Região
     CLCircularRegion *circleRegion = [[CLCircularRegion alloc] initWithCenter:coordinate
-                                                                       radius:250
+                                                                       radius:250 // (precisão 150 a 500 metros)
                                                                    identifier:@"BH Shopping"];
     [locationManager startMonitoringForRegion:circleRegion];
 }
