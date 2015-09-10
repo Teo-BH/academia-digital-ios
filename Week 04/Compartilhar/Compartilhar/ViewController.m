@@ -25,6 +25,13 @@
     // excluindo atividades
     share.excludedActivityTypes = @[ UIActivityTypePostToFacebook ];
     
+    // Define Popover para ipad
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        share.modalPresentationStyle = UIModalPresentationPopover;
+        share.popoverPresentationController.sourceView = sender;
+        share.popoverPresentationController.sourceRect = sender.bounds;
+    }
+    
     [self presentViewController:share animated:YES completion:nil];
 }
 
