@@ -23,6 +23,7 @@
                                 <segments>
                                     <segment title="Connection"/>
                                     <segment title="Session"/>
+                                    <segment title="AFNetworking"/>
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJq-t7-bih">

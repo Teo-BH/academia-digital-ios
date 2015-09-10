@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DCDA101721B7973849557CB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD22FC54B263670D307185D3 /* libPods.a */; };
 		B15A42401BA1F81500E7E571 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A423F1BA1F81500E7E571 /* main.m */; };
 		B15A42431BA1F81500E7E571 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A42421BA1F81500E7E571 /* AppDelegate.m */; };
 		B15A42461BA1F81500E7E571 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A42451BA1F81500E7E571 /* ViewController.m */; };
 		B15A42491BA1F81500E7E571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15A42471BA1F81500E7E571 /* Main.storyboard */; };
 		B15A424B1BA1F81500E7E571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15A424A1BA1F81500E7E571 /* Assets.xcassets */; };
 		B15A424E1BA1F81500E7E571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15A424C1BA1F81500E7E571 /* LaunchScreen.storyboard */; };
-		B15A42571BA1FA3400E7E571 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A42561BA1FA3400E7E571 /* Connection.m */; settings = {ASSET_TAGS = (); }; };
-		B15A425B1BA2021E00E7E571 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A425A1BA2021E00E7E571 /* Session.m */; settings = {ASSET_TAGS = (); }; };
+		B15A42571BA1FA3400E7E571 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A42561BA1FA3400E7E571 /* Connection.m */; };
+		B15A425B1BA2021E00E7E571 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A425A1BA2021E00E7E571 /* Session.m */; };
+		B16119A91BA21674003082FC /* AlamoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = B16119A81BA21674003082FC /* AlamoFire.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,11 @@
 		B15A42591BA2021E00E7E571 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
 		B15A425A1BA2021E00E7E571 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
 		B15A425C1BA2023F00E7E571 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		B16119A71BA21674003082FC /* AlamoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlamoFire.h; sourceTree = "<group>"; };
+		B16119A81BA21674003082FC /* AlamoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlamoFire.m; sourceTree = "<group>"; };
+		C28ECACFD52DF0FF30196468 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D7B63F6516B7CD4468A091D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DD22FC54B263670D307185D3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCDA101721B7973849557CB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		465495A32A7A16DCD8E16910 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7B63F6516B7CD4468A091D9 /* Pods.debug.xcconfig */,
+				C28ECACFD52DF0FF30196468 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78DB1FBEFBE0388A5C7B39FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD22FC54B263670D307185D3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B15A42321BA1F81500E7E571 = {
 			isa = PBXGroup;
 			children = (
 				B15A423D1BA1F81500E7E571 /* Networking */,
 				B15A423C1BA1F81500E7E571 /* Products */,
+				465495A32A7A16DCD8E16910 /* Pods */,
+				78DB1FBEFBE0388A5C7B39FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +122,8 @@
 				B15A42561BA1FA3400E7E571 /* Connection.m */,
 				B15A42591BA2021E00E7E571 /* Session.h */,
 				B15A425A1BA2021E00E7E571 /* Session.m */,
+				B16119A71BA21674003082FC /* AlamoFire.h */,
+				B16119A81BA21674003082FC /* AlamoFire.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -106,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B15A42521BA1F81500E7E571 /* Build configuration list for PBXNativeTarget "Networking" */;
 			buildPhases = (
+				F7F6A641D6DCC342DDCEFE39 /* Check Pods Manifest.lock */,
 				B15A42371BA1F81500E7E571 /* Sources */,
 				B15A42381BA1F81500E7E571 /* Frameworks */,
 				B15A42391BA1F81500E7E571 /* Resources */,
+				94AF098BC49C611A2DEA33ED /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,11 +196,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94AF098BC49C611A2DEA33ED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7F6A641D6DCC342DDCEFE39 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B15A42371BA1F81500E7E571 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16119A91BA21674003082FC /* AlamoFire.m in Sources */,
 				B15A42461BA1F81500E7E571 /* ViewController.m in Sources */,
 				B15A425B1BA2021E00E7E571 /* Session.m in Sources */,
 				B15A42431BA1F81500E7E571 /* AppDelegate.m in Sources */,
@@ -282,6 +347,7 @@
 		};
 		B15A42531BA1F81500E7E571 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B63F6516B7CD4468A091D9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Networking/Info.plist;
@@ -294,6 +360,7 @@
 		};
 		B15A42541BA1F81500E7E571 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28ECACFD52DF0FF30196468 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Networking/Info.plist;
@@ -323,6 +390,7 @@
 				B15A42541BA1F81500E7E571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

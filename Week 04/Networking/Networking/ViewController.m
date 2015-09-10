@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Connection.h"
 #import "Session.h"
+#import "AlamoFire.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,7 @@
 @end
 
 @implementation ViewController {
-    id <Networking> _net[2];
+    id <Networking> _net[3];
     // ou
     //NSArray<Networking> *_array;
 }
@@ -27,6 +28,7 @@
     
     _net[0] = [Connection new];
     _net[1] = [Session new];
+    _net[2] = [AlamoFire new];
 }
 
 -(id<Networking>) networkingSelected {
