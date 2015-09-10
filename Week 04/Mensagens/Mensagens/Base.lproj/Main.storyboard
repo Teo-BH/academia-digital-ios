@@ -1,13 +1,112 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="McL-6f-YeD">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SMS-->
+        <scene sceneID="wPc-4t-QGg">
+            <objects>
+                <viewController id="687-I7-CFP" customClass="SMSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b6y-1a-XpB"/>
+                        <viewControllerLayoutGuide type="bottom" id="o58-kQ-adj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BMX-9i-Boq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFJ-We-EXi">
+                                <rect key="frame" x="461" y="20" width="119" height="30"/>
+                                <state key="normal" title="Carregar Contato"/>
+                                <connections>
+                                    <action selector="selecionarContato:" destination="687-I7-CFP" eventType="touchUpInside" id="Wln-bZ-hIl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contato selecionado..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9O-iS-G6y">
+                                <rect key="frame" x="20" y="24" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bn-BJ-pa5">
+                                <rect key="frame" x="458" y="77" width="122" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="FCo-6G-GuH"/>
+                                </constraints>
+                                <state key="normal" title="Enviar Mensagem"/>
+                                <connections>
+                                    <action selector="enviarMensagem:" destination="687-I7-CFP" eventType="touchUpInside" id="Fjd-Zc-MLW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Teste de envio - Academia Digital" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCq-uc-UdU">
+                                <rect key="frame" x="20" y="77" width="422" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HP8-zW-kEl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HP8-zW-kEl"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Bn-BJ-pa5" firstAttribute="leading" secondItem="vCq-uc-UdU" secondAttribute="trailing" constant="16" id="0cK-0z-6Lf"/>
+                            <constraint firstItem="rFJ-We-EXi" firstAttribute="trailing" secondItem="BMX-9i-Boq" secondAttribute="trailingMargin" id="1EP-dd-cTB"/>
+                            <constraint firstItem="b9O-iS-G6y" firstAttribute="leading" secondItem="BMX-9i-Boq" secondAttribute="leadingMargin" id="6W6-oI-Xgu"/>
+                            <constraint firstItem="4Bn-BJ-pa5" firstAttribute="top" secondItem="rFJ-We-EXi" secondAttribute="bottom" constant="27" id="9km-ko-Zoc"/>
+                            <constraint firstItem="vCq-uc-UdU" firstAttribute="leading" secondItem="BMX-9i-Boq" secondAttribute="leadingMargin" id="ZPE-yK-2NY"/>
+                            <constraint firstItem="vCq-uc-UdU" firstAttribute="top" secondItem="b9O-iS-G6y" secondAttribute="bottom" constant="32" id="ecs-9d-Ehh"/>
+                            <constraint firstItem="4Bn-BJ-pa5" firstAttribute="leading" secondItem="vCq-uc-UdU" secondAttribute="trailing" constant="16" id="fn4-e1-by5"/>
+                            <constraint firstItem="b9O-iS-G6y" firstAttribute="top" secondItem="b6y-1a-XpB" secondAttribute="bottom" constant="4" id="thr-4f-PY3"/>
+                            <constraint firstItem="rFJ-We-EXi" firstAttribute="top" secondItem="b6y-1a-XpB" secondAttribute="bottom" id="wrQ-Nb-F1d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Bn-BJ-pa5" secondAttribute="trailing" id="y0W-SG-1qr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0cK-0z-6Lf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SMS" id="fbt-SL-LFe"/>
+                    <connections>
+                        <outlet property="contatoLabel" destination="b9O-iS-G6y" id="sI9-8y-Xye"/>
+                        <outlet property="enviaMensagemButton" destination="4Bn-BJ-pa5" id="MXW-0w-Khp"/>
+                        <outlet property="mensagemTextField" destination="vCq-uc-UdU" id="VJy-l1-pmz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2L-Dp-YrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-360" y="-2300"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Riv-NZ-4hh">
+            <objects>
+                <tabBarController id="McL-6f-YeD" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="f0e-Dy-Pkf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="687-I7-CFP" kind="relationship" relationship="viewControllers" id="hoV-SB-vG0"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="9ED-hk-m1J"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9E-1J-cCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="-3219"/>
+        </scene>
+        <!--E-mail-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EmailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -30,13 +129,14 @@
                             <constraint firstItem="wQw-IP-cg9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZEf-zl-Obp"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="E-mail" id="SR4-Am-hoE"/>
                     <connections>
                         <outlet property="sendEmailButton" destination="wQw-IP-cg9" id="zJ7-XH-TCK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="305"/>
+            <point key="canvasLocation" x="371" y="-2300"/>
         </scene>
     </scenes>
 </document>

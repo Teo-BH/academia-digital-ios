@@ -6,16 +6,16 @@
 //  Copyright © 2015 Teobaldo Mauro de Moura. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "EmailViewController.h"
 #import <MessageUI/MessageUI.h>
 
-@interface ViewController () <MFMailComposeViewControllerDelegate>
+@interface EmailViewController () <MFMailComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *sendEmailButton;
 
 @end
 
-@implementation ViewController
+@implementation EmailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

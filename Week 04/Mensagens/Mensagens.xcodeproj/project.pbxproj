@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		B16CE2E81BA0CC6E009A06CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CE2E71BA0CC6E009A06CF /* main.m */; };
 		B16CE2EB1BA0CC6E009A06CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CE2EA1BA0CC6E009A06CF /* AppDelegate.m */; };
-		B16CE2EE1BA0CC6E009A06CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CE2ED1BA0CC6E009A06CF /* ViewController.m */; };
+		B16CE2EE1BA0CC6E009A06CF /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CE2ED1BA0CC6E009A06CF /* EmailViewController.m */; };
 		B16CE2F11BA0CC6E009A06CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16CE2EF1BA0CC6E009A06CF /* Main.storyboard */; };
 		B16CE2F31BA0CC6E009A06CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16CE2F21BA0CC6E009A06CF /* Assets.xcassets */; };
 		B16CE2F61BA0CC6E009A06CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16CE2F41BA0CC6E009A06CF /* LaunchScreen.storyboard */; };
 		B16CE2FE1BA0CD47009A06CF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16CE2FD1BA0CD47009A06CF /* MessageUI.framework */; };
+		B1F6F1A51BA1AFCD003BE2F1 /* SMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F6F1A41BA1AFCD003BE2F1 /* SMSViewController.m */; };
+		B1F6F1A81BA1B31D003BE2F1 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F6F1A61BA1B31D003BE2F1 /* Contacts.framework */; };
+		B1F6F1A91BA1B31D003BE2F1 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F6F1A71BA1B31D003BE2F1 /* ContactsUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +24,17 @@
 		B16CE2E71BA0CC6E009A06CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B16CE2E91BA0CC6E009A06CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B16CE2EA1BA0CC6E009A06CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B16CE2EC1BA0CC6E009A06CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B16CE2ED1BA0CC6E009A06CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B16CE2EC1BA0CC6E009A06CF /* EmailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
+		B16CE2ED1BA0CC6E009A06CF /* EmailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
 		B16CE2F01BA0CC6E009A06CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B16CE2F21BA0CC6E009A06CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B16CE2F51BA0CC6E009A06CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B16CE2F71BA0CC6E009A06CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B16CE2FD1BA0CD47009A06CF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B1F6F1A31BA1AFCD003BE2F1 /* SMSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSViewController.h; sourceTree = "<group>"; };
+		B1F6F1A41BA1AFCD003BE2F1 /* SMSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSViewController.m; sourceTree = "<group>"; };
+		B1F6F1A61BA1B31D003BE2F1 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		B1F6F1A71BA1B31D003BE2F1 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F6F1A81BA1B31D003BE2F1 /* Contacts.framework in Frameworks */,
+				B1F6F1A91BA1B31D003BE2F1 /* ContactsUI.framework in Frameworks */,
 				B16CE2FE1BA0CD47009A06CF /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +54,8 @@
 		B16CE2DA1BA0CC6E009A06CF = {
 			isa = PBXGroup;
 			children = (
+				B1F6F1A61BA1B31D003BE2F1 /* Contacts.framework */,
+				B1F6F1A71BA1B31D003BE2F1 /* ContactsUI.framework */,
 				B16CE2FD1BA0CD47009A06CF /* MessageUI.framework */,
 				B16CE2E51BA0CC6E009A06CF /* Mensagens */,
 				B16CE2E41BA0CC6E009A06CF /* Products */,
@@ -64,8 +75,10 @@
 			children = (
 				B16CE2E91BA0CC6E009A06CF /* AppDelegate.h */,
 				B16CE2EA1BA0CC6E009A06CF /* AppDelegate.m */,
-				B16CE2EC1BA0CC6E009A06CF /* ViewController.h */,
-				B16CE2ED1BA0CC6E009A06CF /* ViewController.m */,
+				B16CE2EC1BA0CC6E009A06CF /* EmailViewController.h */,
+				B16CE2ED1BA0CC6E009A06CF /* EmailViewController.m */,
+				B1F6F1A31BA1AFCD003BE2F1 /* SMSViewController.h */,
+				B1F6F1A41BA1AFCD003BE2F1 /* SMSViewController.m */,
 				B16CE2EF1BA0CC6E009A06CF /* Main.storyboard */,
 				B16CE2F21BA0CC6E009A06CF /* Assets.xcassets */,
 				B16CE2F41BA0CC6E009A06CF /* LaunchScreen.storyboard */,
@@ -154,7 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16CE2EE1BA0CC6E009A06CF /* ViewController.m in Sources */,
+				B1F6F1A51BA1AFCD003BE2F1 /* SMSViewController.m in Sources */,
+				B16CE2EE1BA0CC6E009A06CF /* EmailViewController.m in Sources */,
 				B16CE2EB1BA0CC6E009A06CF /* AppDelegate.m in Sources */,
 				B16CE2E81BA0CC6E009A06CF /* main.m in Sources */,
 			);
@@ -305,6 +319,7 @@
 				B16CE2FC1BA0CC6E009A06CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
