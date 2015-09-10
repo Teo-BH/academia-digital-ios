@@ -95,8 +95,11 @@ typedef void (^TipoBlocoNomeado)(NSString *nome, NSError *error);
     [self bloco]();
     
     // block em property
-    [self setHandler:outroBloco]; // ou self.handler = outroBloco;
+    [self setHandler:outroBloco];
     [self handler](@"Meu bloco com propriedade", nil);
+    // ou
+    self.handler = outroBloco;
+    self.handler(@"Meu bloco com propriedade", nil);
  
     NSLog(@"fim do viewDidLoad");
 }
