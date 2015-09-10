@@ -8,8 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+typedef void (^TipoBloco)(NSString *, NSError *);
+typedef void (^TipoBlocoNomeado)(NSString *nome, NSError *error);
 
+@interface ViewController ()
+@property (nonatomic, copy) TipoBlocoNomeado handler;
 @end
 
 @implementation ViewController
@@ -75,10 +78,37 @@
     void (^myBlock)(NSString *, NSError *) = ^(NSString *s, NSError *e) {
         NSLog(@"%@ - %@", s, e);
     };
-    
     myBlock(@"Meu bloco...", nil);
+    
+    // usando o typedef
+    TipoBloco outroBloco = ^(NSString *s, NSError *e) {
+        NSLog(@"%@ - %@", s, e);
+    };
+    outroBloco(@"Meu outro bloco..", nil);
+    
+    // função com block
+    [self executar:^(NSString *nome, NSError *error) {
+        NSLog(@"%@ - %@", nome, error);
+    }];
+    
+    // executando bloco vazio
+    [self bloco]();
+    
+    // block em property
+    [self setHandler:outroBloco]; // ou self.handler = outroBloco;
+    [self handler](@"Meu bloco com propriedade", nil);
  
     NSLog(@"fim do viewDidLoad");
+}
+
+#pragma mark - função com block
+
+-(void)executar:(TipoBlocoNomeado)bloco {
+    bloco(@"executando...", nil);
+}
+
+-(void (^)(void))bloco {
+    return ^{ NSLog(@"Bloco vazio"); };
 }
 
 @end
