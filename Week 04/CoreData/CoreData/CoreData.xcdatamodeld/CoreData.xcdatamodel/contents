@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="Empresa" representedClassName="Empresa" syncable="YES">
+        <attribute name="nomeFantasia" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="funcionarios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pessoa" inverseName="empregador" inverseEntity="Pessoa" syncable="YES"/>
+    </entity>
+    <entity name="Pessoa" representedClassName="Pessoa" syncable="YES">
+        <attribute name="corPreferida" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="idade" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="empregador" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Empresa" inverseName="funcionarios" inverseEntity="Empresa" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Pessoa" positionX="169" positionY="-189" width="128" height="103"/>
+        <element name="Empresa" positionX="-56" positionY="-279" width="128" height="73"/>
+    </elements>
+</model>
