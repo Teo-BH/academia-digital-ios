@@ -34,12 +34,14 @@
     NSNumber *enabled = [userDefaults objectForKey:SWITCH_PREF];
     NSNumber *slider = [userDefaults objectForKey:SLIDER_PREF];
     
-    NSLog(@"%@ - %@ - %@", name, enabled, slider);
+    NSLog(@"%@ - %@", NAME_PREF, name);
+    NSLog(@"%@ - %@", SWITCH_PREF, enabled);
+    NSLog(@"%@ - %@", SLIDER_PREF, slider);
     
     // Preenchendo as propriedades da view
     [[self nameTextField] setText:name];
-    [[self toggleSwitch] setOn:[enabled boolValue]];
-    [[self slider] setValue:[slider floatValue]];
+    [[self toggleSwitch] setOn:[enabled boolValue] animated:YES];
+    [[self slider] setValue:[slider floatValue] animated:YES];
 }
 
 - (IBAction)saveTouched:(UIButton *)sender {
