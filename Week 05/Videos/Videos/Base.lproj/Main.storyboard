@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOV-po-hl1">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="nUP-SC-PrP">
+                                        <connections>
+                                            <action selector="voltar:" destination="BYZ-38-t0r" id="VxZ-hK-Esd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yws-vH-dfo"/>
+                                    <barButtonItem systemItem="play" id="giB-i5-AqP">
+                                        <connections>
+                                            <action selector="tocar:" destination="BYZ-38-t0r" id="EJI-O2-Ea4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bTn-Zm-ixK"/>
+                                    <barButtonItem systemItem="fastForward" id="rtf-BS-IHN">
+                                        <connections>
+                                            <action selector="avancar:" destination="BYZ-38-t0r" id="Ovk-Ku-6iB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svd-9W-wj7">
+                                <rect key="frame" x="20" y="150" width="560" height="300"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="rIc-oG-3GQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Svd-9W-wj7" secondAttribute="trailing" id="3uo-ee-HwN"/>
+                            <constraint firstItem="Svd-9W-wj7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="77Z-mp-7sk"/>
+                            <constraint firstItem="zOV-po-hl1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Hch-pl-H7b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zOV-po-hl1" secondAttribute="bottom" id="cHi-IS-K2r"/>
+                            <constraint firstItem="Svd-9W-wj7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gmS-oK-RGS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zOV-po-hl1" secondAttribute="trailing" constant="-20" id="hGN-K7-YKH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="Svd-9W-wj7" id="hDs-QU-kSf"/>
+                        <outlet property="toolbar" destination="zOV-po-hl1" id="6sy-be-aYv"/>
+                        <outletCollection property="toolbarButtons" destination="nUP-SC-PrP" id="tSJ-m1-cnI"/>
+                        <outletCollection property="toolbarButtons" destination="yws-vH-dfo" id="ngr-Eg-L71"/>
+                        <outletCollection property="toolbarButtons" destination="bTn-Zm-ixK" id="brb-PW-bvd"/>
+                        <outletCollection property="toolbarButtons" destination="rtf-BS-IHN" id="px2-5h-0xJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+    </scenes>
+</document>
