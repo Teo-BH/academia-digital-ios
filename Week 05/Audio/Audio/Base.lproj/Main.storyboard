@@ -18,32 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-j1-NNr">
-                                <rect key="frame" x="20" y="28" width="560" height="85"/>
-                                <color key="backgroundColor" red="0.17254901959999999" green="0.50588235290000005" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="85" id="o4Y-WP-CZd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Trillha">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="trilhaTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Za-Mv-oIF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcK-XD-8xg">
-                                <rect key="frame" x="20" y="133" width="270" height="214"/>
-                                <color key="backgroundColor" red="0.17254901959999999" green="0.50588235290000005" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Gaivotas">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="efeitoTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mV0-6l-mnc"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujX-BX-jl4">
-                                <rect key="frame" x="310" y="133" width="270" height="214"/>
+                                <rect key="frame" x="310" y="129" width="270" height="216"/>
                                 <color key="backgroundColor" red="0.17254901959999999" green="0.50588235290000005" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Teleport">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-b8-WKk">
-                                <rect key="frame" x="20" y="367" width="270" height="213"/>
+                                <rect key="frame" x="20" y="365" width="270" height="215"/>
                                 <color key="backgroundColor" red="0.17254901959999999" green="0.50588235290000005" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Teclado">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhC-06-uMf">
-                                <rect key="frame" x="310" y="367" width="270" height="213"/>
+                                <rect key="frame" x="310" y="365" width="270" height="215"/>
                                 <color key="backgroundColor" red="0.17254901959999999" green="0.50588235290000005" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Zuuum">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,32 +48,79 @@
                                     <action selector="efeitoTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M0Y-kl-3qN"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ii-eH-I9R">
+                                <rect key="frame" x="20" y="28" width="560" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-j1-NNr">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="60"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.50588235290000005" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="poU-Th-Gdt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Trillha">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="trilhaTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Za-Mv-oIF"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAS-f4-Khq">
+                                        <rect key="frame" x="0.0" y="66" width="560" height="19"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.50588235290000005" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.17254901959999999" green="0.50588235290000005" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="4B3-lb-kEY"/>
+                                    <constraint firstItem="o8Y-j1-NNr" firstAttribute="top" secondItem="5ii-eH-I9R" secondAttribute="top" id="4u8-lL-RfI"/>
+                                    <constraint firstItem="o8Y-j1-NNr" firstAttribute="leading" secondItem="5ii-eH-I9R" secondAttribute="leading" id="8QY-mJ-pLC"/>
+                                    <constraint firstAttribute="trailing" secondItem="QAS-f4-Khq" secondAttribute="trailing" id="Bws-OJ-3vz"/>
+                                    <constraint firstItem="QAS-f4-Khq" firstAttribute="top" secondItem="o8Y-j1-NNr" secondAttribute="bottom" constant="6" id="G07-Bx-uld"/>
+                                    <constraint firstAttribute="bottom" secondItem="QAS-f4-Khq" secondAttribute="bottom" id="IGt-mf-Vg9"/>
+                                    <constraint firstAttribute="trailing" secondItem="o8Y-j1-NNr" secondAttribute="trailing" id="oCx-kK-WCQ"/>
+                                    <constraint firstItem="QAS-f4-Khq" firstAttribute="leading" secondItem="5ii-eH-I9R" secondAttribute="leading" id="xih-XP-NkZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcK-XD-8xg">
+                                <rect key="frame" x="20" y="129" width="270" height="216"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.50588235290000005" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Gaivotas">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="efeitoTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mV0-6l-mnc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ujX-BX-jl4" secondAttribute="trailing" id="0p3-wU-9kb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VXd-b8-WKk" secondAttribute="bottom" constant="20" id="325-XJ-EIJ"/>
+                            <constraint firstItem="ujX-BX-jl4" firstAttribute="top" secondItem="5ii-eH-I9R" secondAttribute="bottom" constant="16" id="4QN-ad-Whd"/>
                             <constraint firstItem="FcK-XD-8xg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7HG-0f-yrq"/>
                             <constraint firstItem="FhC-06-uMf" firstAttribute="top" secondItem="ujX-BX-jl4" secondAttribute="bottom" constant="20" id="Ad7-iJ-nZV"/>
                             <constraint firstItem="FhC-06-uMf" firstAttribute="width" secondItem="FcK-XD-8xg" secondAttribute="width" id="DmF-sH-fIL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FhC-06-uMf" secondAttribute="bottom" constant="20" id="G9B-HP-4QC"/>
                             <constraint firstItem="VXd-b8-WKk" firstAttribute="height" secondItem="FcK-XD-8xg" secondAttribute="height" id="K1u-fI-VXH"/>
+                            <constraint firstItem="5ii-eH-I9R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KLR-hO-xLs"/>
+                            <constraint firstItem="5ii-eH-I9R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="M8k-TL-RmV"/>
                             <constraint firstItem="VXd-b8-WKk" firstAttribute="top" secondItem="FcK-XD-8xg" secondAttribute="bottom" constant="20" id="Pva-2Z-b4E"/>
                             <constraint firstItem="VXd-b8-WKk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qb1-2A-pqp"/>
-                            <constraint firstItem="o8Y-j1-NNr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QuK-22-dWx"/>
                             <constraint firstItem="ujX-BX-jl4" firstAttribute="width" secondItem="FcK-XD-8xg" secondAttribute="width" id="Tcu-R7-sJh"/>
                             <constraint firstItem="FhC-06-uMf" firstAttribute="height" secondItem="FcK-XD-8xg" secondAttribute="height" id="ZDi-9X-opD"/>
-                            <constraint firstItem="FcK-XD-8xg" firstAttribute="top" secondItem="o8Y-j1-NNr" secondAttribute="bottom" constant="20" id="ZIX-nY-EFE"/>
-                            <constraint firstItem="o8Y-j1-NNr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jcz-Bi-qgq"/>
-                            <constraint firstItem="o8Y-j1-NNr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kGz-uq-Qdn"/>
-                            <constraint firstItem="ujX-BX-jl4" firstAttribute="top" secondItem="o8Y-j1-NNr" secondAttribute="bottom" constant="20" id="lZo-k3-p55"/>
+                            <constraint firstItem="5ii-eH-I9R" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="b79-ma-gXR"/>
                             <constraint firstItem="ujX-BX-jl4" firstAttribute="height" secondItem="FcK-XD-8xg" secondAttribute="height" id="mEl-Ce-H9Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FhC-06-uMf" secondAttribute="trailing" id="taM-x6-Aby"/>
+                            <constraint firstItem="FcK-XD-8xg" firstAttribute="top" secondItem="5ii-eH-I9R" secondAttribute="bottom" constant="16" id="v0k-OV-bhW"/>
                             <constraint firstItem="ujX-BX-jl4" firstAttribute="leading" secondItem="FcK-XD-8xg" secondAttribute="trailing" constant="20" id="yVp-Ib-oIE"/>
                             <constraint firstItem="VXd-b8-WKk" firstAttribute="width" secondItem="FcK-XD-8xg" secondAttribute="width" id="zFT-gO-6Eu"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="parentProgressView" destination="5ii-eH-I9R" id="b2L-rm-S3t"/>
+                        <outlet property="progressRightMargin" destination="Bws-OJ-3vz" id="TCR-HM-IAk"/>
                         <outlet property="trillhaButton" destination="o8Y-j1-NNr" id="3aU-UE-B4p"/>
                         <outletCollection property="efeitoButtons" destination="ujX-BX-jl4" id="s2Z-i6-qFB"/>
                         <outletCollection property="efeitoButtons" destination="FcK-XD-8xg" id="qnm-U0-TYE"/>
