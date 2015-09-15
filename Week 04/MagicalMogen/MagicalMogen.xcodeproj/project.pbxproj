@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B17C8CCA1BA35A3C0030BDA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B17C8CC91BA35A3C0030BDA9 /* main.m */; };
+		B17C8CCD1BA35A3C0030BDA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B17C8CCC1BA35A3C0030BDA9 /* AppDelegate.m */; };
+		B17C8CD01BA35A3C0030BDA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17C8CCF1BA35A3C0030BDA9 /* ViewController.m */; };
+		B17C8CD31BA35A3C0030BDA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17C8CD11BA35A3C0030BDA9 /* Main.storyboard */; };
+		B17C8CD51BA35A3C0030BDA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17C8CD41BA35A3C0030BDA9 /* Assets.xcassets */; };
+		B17C8CD81BA35A3C0030BDA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17C8CD61BA35A3C0030BDA9 /* LaunchScreen.storyboard */; };
+		B17C8CE11BA35B550030BDA9 /* MagicalMogen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B17C8CDF1BA35B550030BDA9 /* MagicalMogen.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		B17C8CEA1BA35CE30030BDA9 /* _Empresa.m in Sources */ = {isa = PBXBuildFile; fileRef = B17C8CE31BA35CE30030BDA9 /* _Empresa.m */; settings = {ASSET_TAGS = (); }; };
+		B17C8CEB1BA35CE30030BDA9 /* _Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = B17C8CE51BA35CE30030BDA9 /* _Pessoa.m */; settings = {ASSET_TAGS = (); }; };
+		B17C8CEC1BA35CE30030BDA9 /* Empresa.m in Sources */ = {isa = PBXBuildFile; fileRef = B17C8CE71BA35CE30030BDA9 /* Empresa.m */; settings = {ASSET_TAGS = (); }; };
+		B17C8CED1BA35CE30030BDA9 /* Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = B17C8CE91BA35CE30030BDA9 /* Pessoa.m */; settings = {ASSET_TAGS = (); }; };
+		B18925A21BA3605800D5DF4F /* MagicalRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18925A11BA3605800D5DF4F /* MagicalRecord.framework */; settings = {ASSET_TAGS = (); }; };
+		B18925A41BA369EC00D5DF4F /* MagicalRecord.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B18925A11BA3605800D5DF4F /* MagicalRecord.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B18925A31BA369D100D5DF4F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B18925A41BA369EC00D5DF4F /* MagicalRecord.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B17C8CC51BA35A3C0030BDA9 /* MagicalMogen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicalMogen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17C8CC91BA35A3C0030BDA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B17C8CCB1BA35A3C0030BDA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B17C8CCC1BA35A3C0030BDA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B17C8CCE1BA35A3C0030BDA9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B17C8CCF1BA35A3C0030BDA9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B17C8CD21BA35A3C0030BDA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B17C8CD41BA35A3C0030BDA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B17C8CD71BA35A3C0030BDA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B17C8CD91BA35A3C0030BDA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17C8CE01BA35B550030BDA9 /* MagicalMogen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicalMogen.xcdatamodel; sourceTree = "<group>"; };
+		B17C8CE21BA35CE30030BDA9 /* _Empresa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Empresa.h; sourceTree = "<group>"; };
+		B17C8CE31BA35CE30030BDA9 /* _Empresa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Empresa.m; sourceTree = "<group>"; };
+		B17C8CE41BA35CE30030BDA9 /* _Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Pessoa.h; sourceTree = "<group>"; };
+		B17C8CE51BA35CE30030BDA9 /* _Pessoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Pessoa.m; sourceTree = "<group>"; };
+		B17C8CE61BA35CE30030BDA9 /* Empresa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Empresa.h; sourceTree = "<group>"; };
+		B17C8CE71BA35CE30030BDA9 /* Empresa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Empresa.m; sourceTree = "<group>"; };
+		B17C8CE81BA35CE30030BDA9 /* Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pessoa.h; sourceTree = "<group>"; };
+		B17C8CE91BA35CE30030BDA9 /* Pessoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pessoa.m; sourceTree = "<group>"; };
+		B18925A11BA3605800D5DF4F /* MagicalRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MagicalRecord.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B17C8CC21BA35A3C0030BDA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18925A21BA3605800D5DF4F /* MagicalRecord.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B17C8CBC1BA35A3C0030BDA9 = {
+			isa = PBXGroup;
+			children = (
+				B18925A11BA3605800D5DF4F /* MagicalRecord.framework */,
+				B17C8CC71BA35A3C0030BDA9 /* MagicalMogen */,
+				B17C8CC61BA35A3C0030BDA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B17C8CC61BA35A3C0030BDA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B17C8CC51BA35A3C0030BDA9 /* MagicalMogen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B17C8CC71BA35A3C0030BDA9 /* MagicalMogen */ = {
+			isa = PBXGroup;
+			children = (
+				B17C8CEE1BA35CEF0030BDA9 /* CoreData */,
+				B17C8CCB1BA35A3C0030BDA9 /* AppDelegate.h */,
+				B17C8CCC1BA35A3C0030BDA9 /* AppDelegate.m */,
+				B17C8CCE1BA35A3C0030BDA9 /* ViewController.h */,
+				B17C8CCF1BA35A3C0030BDA9 /* ViewController.m */,
+				B17C8CD11BA35A3C0030BDA9 /* Main.storyboard */,
+				B17C8CD41BA35A3C0030BDA9 /* Assets.xcassets */,
+				B17C8CD61BA35A3C0030BDA9 /* LaunchScreen.storyboard */,
+				B17C8CD91BA35A3C0030BDA9 /* Info.plist */,
+				B17C8CC81BA35A3C0030BDA9 /* Supporting Files */,
+				B17C8CDF1BA35B550030BDA9 /* MagicalMogen.xcdatamodeld */,
+			);
+			path = MagicalMogen;
+			sourceTree = "<group>";
+		};
+		B17C8CC81BA35A3C0030BDA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B17C8CC91BA35A3C0030BDA9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B17C8CEE1BA35CEF0030BDA9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B17C8CE21BA35CE30030BDA9 /* _Empresa.h */,
+				B17C8CE31BA35CE30030BDA9 /* _Empresa.m */,
+				B17C8CE41BA35CE30030BDA9 /* _Pessoa.h */,
+				B17C8CE51BA35CE30030BDA9 /* _Pessoa.m */,
+				B17C8CE61BA35CE30030BDA9 /* Empresa.h */,
+				B17C8CE71BA35CE30030BDA9 /* Empresa.m */,
+				B17C8CE81BA35CE30030BDA9 /* Pessoa.h */,
+				B17C8CE91BA35CE30030BDA9 /* Pessoa.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B17C8CC41BA35A3C0030BDA9 /* MagicalMogen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17C8CDC1BA35A3C0030BDA9 /* Build configuration list for PBXNativeTarget "MagicalMogen" */;
+			buildPhases = (
+				B17C8CC11BA35A3C0030BDA9 /* Sources */,
+				B17C8CC21BA35A3C0030BDA9 /* Frameworks */,
+				B17C8CC31BA35A3C0030BDA9 /* Resources */,
+				B17C8CEF1BA35E2F0030BDA9 /* ShellScript */,
+				B18925A31BA369D100D5DF4F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicalMogen;
+			productName = MagicalMogen;
+			productReference = B17C8CC51BA35A3C0030BDA9 /* MagicalMogen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B17C8CBD1BA35A3C0030BDA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Teobaldo Mauro de Moura";
+				TargetAttributes = {
+					B17C8CC41BA35A3C0030BDA9 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = S5S8JD5V3E;
+					};
+				};
+			};
+			buildConfigurationList = B17C8CC01BA35A3C0030BDA9 /* Build configuration list for PBXProject "MagicalMogen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B17C8CBC1BA35A3C0030BDA9;
+			productRefGroup = B17C8CC61BA35A3C0030BDA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B17C8CC41BA35A3C0030BDA9 /* MagicalMogen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B17C8CC31BA35A3C0030BDA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17C8CD81BA35A3C0030BDA9 /* LaunchScreen.storyboard in Resources */,
+				B17C8CD51BA35A3C0030BDA9 /* Assets.xcassets in Resources */,
+				B17C8CD31BA35A3C0030BDA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B17C8CEF1BA35E2F0030BDA9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd MagicalMogen\nmogenerator --v2 --model MagicalMogen.xcdatamodeld";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B17C8CC11BA35A3C0030BDA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17C8CD01BA35A3C0030BDA9 /* ViewController.m in Sources */,
+				B17C8CE11BA35B550030BDA9 /* MagicalMogen.xcdatamodeld in Sources */,
+				B17C8CCD1BA35A3C0030BDA9 /* AppDelegate.m in Sources */,
+				B17C8CEA1BA35CE30030BDA9 /* _Empresa.m in Sources */,
+				B17C8CEB1BA35CE30030BDA9 /* _Pessoa.m in Sources */,
+				B17C8CEC1BA35CE30030BDA9 /* Empresa.m in Sources */,
+				B17C8CED1BA35CE30030BDA9 /* Pessoa.m in Sources */,
+				B17C8CCA1BA35A3C0030BDA9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B17C8CD11BA35A3C0030BDA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B17C8CD21BA35A3C0030BDA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B17C8CD61BA35A3C0030BDA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B17C8CD71BA35A3C0030BDA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B17C8CDA1BA35A3C0030BDA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B17C8CDB1BA35A3C0030BDA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B17C8CDD1BA35A3C0030BDA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MagicalMogen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.MagicalMogen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B17C8CDE1BA35A3C0030BDA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MagicalMogen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.MagicalMogen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B17C8CC01BA35A3C0030BDA9 /* Build configuration list for PBXProject "MagicalMogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17C8CDA1BA35A3C0030BDA9 /* Debug */,
+				B17C8CDB1BA35A3C0030BDA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17C8CDC1BA35A3C0030BDA9 /* Build configuration list for PBXNativeTarget "MagicalMogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17C8CDD1BA35A3C0030BDA9 /* Debug */,
+				B17C8CDE1BA35A3C0030BDA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B17C8CDF1BA35B550030BDA9 /* MagicalMogen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B17C8CE01BA35B550030BDA9 /* MagicalMogen.xcdatamodel */,
+			);
+			currentVersion = B17C8CE01BA35B550030BDA9 /* MagicalMogen.xcdatamodel */;
+			path = MagicalMogen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B17C8CBD1BA35A3C0030BDA9 /* Project object */;
+}
