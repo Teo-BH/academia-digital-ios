@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+#define NOTIFICATION_CATEGORY_ID @"category-ID"
+#define NOTIFICATION_ACTION_1 @"action1-ID"
+#define NOTIFICATION_ACTION_2 @"action2-ID"
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @end
@@ -16,21 +20,50 @@
 
 #pragma mark - Life Cycle
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
-    // 1: configurar pedido ao usuário
+    // 1.1: categorias (ações da notificações)
+    UIUserNotificationCategory *category = [self notificationCategory];
+    NSSet *categories = [NSSet setWithObject:category];
+    
+    // 1.2: configurar pedido ao usuário
     UIUserNotificationType types = (UIUserNotificationTypeAlert |
                                     UIUserNotificationTypeBadge |
                                     UIUserNotificationTypeSound);
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types
-                                                                             categories:nil]; // categorias são ações na notificações
     
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types
+                                                                             categories:categories];
     
     // 2: pedir autorização
     [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+}
+
+-(UIUserNotificationCategory *)notificationCategory {
+    // 1*: Categorias
     
+    // Ação 1
+    UIMutableUserNotificationAction *action1 = [[UIMutableUserNotificationAction alloc] init];
+    action1.identifier = NOTIFICATION_ACTION_1;
+    action1.title = @"Ação 1";
+    action1.activationMode = UIUserNotificationActivationModeBackground; // segundo plano
     
+    // Ação 2
+    UIMutableUserNotificationAction *action2 = [[UIMutableUserNotificationAction alloc] init];
+    action2.identifier = NOTIFICATION_ACTION_2;
+    action2.title = @"Ação 2";
+    action2.activationMode = UIUserNotificationActivationModeForeground; // primeiro plano quando usar authenticationRequired
+    action2.authenticationRequired = YES; // requer desbloquear o usuário (ex: acesso ao keychain)
+    action2.destructive = YES;
+    
+    // categoria
+    UIMutableUserNotificationCategory *category = [[UIMutableUserNotificationCategory alloc] init];
+    category.identifier = NOTIFICATION_CATEGORY_ID;
+    [category setActions:@[action1, action2]
+              forContext:UIUserNotificationActionContextMinimal]; // TIP: - Minimal 2 botões em todos devices
+                                                                  //      - Default 4 botões em alguns devices
+    
+    return category;
 }
 
 #pragma mark - Actions
@@ -44,7 +77,7 @@
     
     // corpo (iOS)
     notification.alertBody = @"[iOS] Corpo da Notificação, \
-    aparece em todos os dispositivos";
+aparece em todos os dispositivos";
     
     // data de agendamento
     // NOTA: estou agendando somente para testar, para enviar imediatamente
@@ -53,10 +86,10 @@
     
     
     // caso queira, podemos modificar a badge
-    //notification.applicationIconBadgeNumber = 5;
+    notification.applicationIconBadgeNumber = 1;
     
     // caso utilize categoria (ações na notificações)
-    // notification.category = ...
+    notification.category = NOTIFICATION_CATEGORY_ID;
     
     // 2: Envia a Notificação
     // enviando
