@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B147176E1BA9A5D40004ADD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B147176D1BA9A5D40004ADD4 /* main.m */; };
+		B14717711BA9A5D40004ADD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B14717701BA9A5D40004ADD4 /* AppDelegate.m */; };
+		B14717741BA9A5D40004ADD4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B14717731BA9A5D40004ADD4 /* LoginViewController.m */; };
+		B14717771BA9A5D40004ADD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14717751BA9A5D40004ADD4 /* Main.storyboard */; };
+		B14717791BA9A5D40004ADD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14717781BA9A5D40004ADD4 /* Assets.xcassets */; };
+		B147177C1BA9A5D40004ADD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B147177A1BA9A5D40004ADD4 /* LaunchScreen.storyboard */; };
+		B14717861BA9A61A0004ADD4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14717841BA9A61A0004ADD4 /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
+		B14717871BA9A61A0004ADD4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14717851BA9A61A0004ADD4 /* Crashlytics.framework */; settings = {ASSET_TAGS = (); }; };
+		B147178B1BA9A68F0004ADD4 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14717881BA9A68F0004ADD4 /* DigitsKit.framework */; settings = {ASSET_TAGS = (); }; };
+		B147178C1BA9A68F0004ADD4 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B14717891BA9A68F0004ADD4 /* DigitsKitResources.bundle */; settings = {ASSET_TAGS = (); }; };
+		B147178D1BA9A68F0004ADD4 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B147178A1BA9A68F0004ADD4 /* TwitterCore.framework */; settings = {ASSET_TAGS = (); }; };
+		B14717901BA9AB430004ADD4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B147178F1BA9AB430004ADD4 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B14717691BA9A5D40004ADD4 /* DesafioFabric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioFabric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B147176D1BA9A5D40004ADD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B147176F1BA9A5D40004ADD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B14717701BA9A5D40004ADD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B14717721BA9A5D40004ADD4 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B14717731BA9A5D40004ADD4 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B14717761BA9A5D40004ADD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B14717781BA9A5D40004ADD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B147177B1BA9A5D40004ADD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B147177D1BA9A5D40004ADD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14717841BA9A61A0004ADD4 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		B14717851BA9A61A0004ADD4 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		B14717881BA9A68F0004ADD4 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		B14717891BA9A68F0004ADD4 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
+		B147178A1BA9A68F0004ADD4 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		B147178E1BA9AB430004ADD4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B147178F1BA9AB430004ADD4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B14717911BA9B3B40004ADD4 /* AppDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDefine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B14717661BA9A5D40004ADD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B147178B1BA9A68F0004ADD4 /* DigitsKit.framework in Frameworks */,
+				B147178D1BA9A68F0004ADD4 /* TwitterCore.framework in Frameworks */,
+				B14717871BA9A61A0004ADD4 /* Crashlytics.framework in Frameworks */,
+				B14717861BA9A61A0004ADD4 /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B14717601BA9A5D40004ADD4 = {
+			isa = PBXGroup;
+			children = (
+				B14717881BA9A68F0004ADD4 /* DigitsKit.framework */,
+				B14717891BA9A68F0004ADD4 /* DigitsKitResources.bundle */,
+				B147178A1BA9A68F0004ADD4 /* TwitterCore.framework */,
+				B14717841BA9A61A0004ADD4 /* Fabric.framework */,
+				B14717851BA9A61A0004ADD4 /* Crashlytics.framework */,
+				B147176B1BA9A5D40004ADD4 /* DesafioFabric */,
+				B147176A1BA9A5D40004ADD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B147176A1BA9A5D40004ADD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B14717691BA9A5D40004ADD4 /* DesafioFabric.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B147176B1BA9A5D40004ADD4 /* DesafioFabric */ = {
+			isa = PBXGroup;
+			children = (
+				B14717911BA9B3B40004ADD4 /* AppDefine.h */,
+				B147176F1BA9A5D40004ADD4 /* AppDelegate.h */,
+				B14717701BA9A5D40004ADD4 /* AppDelegate.m */,
+				B14717721BA9A5D40004ADD4 /* LoginViewController.h */,
+				B14717731BA9A5D40004ADD4 /* LoginViewController.m */,
+				B147178E1BA9AB430004ADD4 /* MainViewController.h */,
+				B147178F1BA9AB430004ADD4 /* MainViewController.m */,
+				B14717751BA9A5D40004ADD4 /* Main.storyboard */,
+				B14717781BA9A5D40004ADD4 /* Assets.xcassets */,
+				B147177A1BA9A5D40004ADD4 /* LaunchScreen.storyboard */,
+				B147177D1BA9A5D40004ADD4 /* Info.plist */,
+				B147176C1BA9A5D40004ADD4 /* Supporting Files */,
+			);
+			path = DesafioFabric;
+			sourceTree = "<group>";
+		};
+		B147176C1BA9A5D40004ADD4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B147176D1BA9A5D40004ADD4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B14717681BA9A5D40004ADD4 /* DesafioFabric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B14717801BA9A5D40004ADD4 /* Build configuration list for PBXNativeTarget "DesafioFabric" */;
+			buildPhases = (
+				B14717651BA9A5D40004ADD4 /* Sources */,
+				B14717661BA9A5D40004ADD4 /* Frameworks */,
+				B14717671BA9A5D40004ADD4 /* Resources */,
+				B14717831BA9A6070004ADD4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioFabric;
+			productName = DesafioFabric;
+			productReference = B14717691BA9A5D40004ADD4 /* DesafioFabric.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B14717611BA9A5D40004ADD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Teobaldo Mauro de Moura";
+				TargetAttributes = {
+					B14717681BA9A5D40004ADD4 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = S5S8JD5V3E;
+					};
+				};
+			};
+			buildConfigurationList = B14717641BA9A5D40004ADD4 /* Build configuration list for PBXProject "DesafioFabric" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B14717601BA9A5D40004ADD4;
+			productRefGroup = B147176A1BA9A5D40004ADD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B14717681BA9A5D40004ADD4 /* DesafioFabric */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B14717671BA9A5D40004ADD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B147178C1BA9A68F0004ADD4 /* DigitsKitResources.bundle in Resources */,
+				B147177C1BA9A5D40004ADD4 /* LaunchScreen.storyboard in Resources */,
+				B14717791BA9A5D40004ADD4 /* Assets.xcassets in Resources */,
+				B14717771BA9A5D40004ADD4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B14717831BA9A6070004ADD4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e94bd5746d9a7f6dce7449d7601b761fa4814675 409a3d56c2b5bcf84d1247c7b6507122661c284d726d7eaef67afd47e1f2ace9";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B14717651BA9A5D40004ADD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14717741BA9A5D40004ADD4 /* LoginViewController.m in Sources */,
+				B14717711BA9A5D40004ADD4 /* AppDelegate.m in Sources */,
+				B147176E1BA9A5D40004ADD4 /* main.m in Sources */,
+				B14717901BA9AB430004ADD4 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B14717751BA9A5D40004ADD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B14717761BA9A5D40004ADD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B147177A1BA9A5D40004ADD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B147177B1BA9A5D40004ADD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B147177E1BA9A5D40004ADD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B147177F1BA9A5D40004ADD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B14717811BA9A5D40004ADD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DesafioFabric/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.DesafioFabric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B14717821BA9A5D40004ADD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DesafioFabric/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.DesafioFabric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B14717641BA9A5D40004ADD4 /* Build configuration list for PBXProject "DesafioFabric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B147177E1BA9A5D40004ADD4 /* Debug */,
+				B147177F1BA9A5D40004ADD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B14717801BA9A5D40004ADD4 /* Build configuration list for PBXNativeTarget "DesafioFabric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14717811BA9A5D40004ADD4 /* Debug */,
+				B14717821BA9A5D40004ADD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B14717611BA9A5D40004ADD4 /* Project object */;
+}
