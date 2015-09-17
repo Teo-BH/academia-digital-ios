@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ou7-Yf-lbJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Lista de Entidades-->
@@ -52,6 +53,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="NUm-tN-QfL" kind="show" id="Mge-uB-eQw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -60,13 +64,65 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="name" id="JkH-NN-fBR"/>
-                    <connections>
-                        <outlet property="navigationItem" destination="JkH-NN-fBR" id="bbK-my-geQ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Mh-1F-jRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-348" y="1037"/>
+        </scene>
+        <!--name-->
+        <scene sceneID="Tck-bb-VO4">
+            <objects>
+                <tableViewController id="NUm-tN-QfL" customClass="DetailTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XuJ-6p-XCJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PropertyCellID" id="1jj-zp-8JD" customClass="DetailTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1jj-zp-8JD" id="5tK-pL-mQF">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tol-2P-bmq">
+                                            <rect key="frame" x="16" y="0.0" width="576" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgL-q2-Krq">
+                                            <rect key="frame" x="26" y="16" width="566" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="tol-2P-bmq" secondAttribute="trailing" id="25M-FJ-iDb"/>
+                                        <constraint firstItem="KgL-q2-Krq" firstAttribute="trailing" secondItem="5tK-pL-mQF" secondAttribute="trailingMargin" id="2Bw-L1-Shj"/>
+                                        <constraint firstItem="tol-2P-bmq" firstAttribute="leading" secondItem="5tK-pL-mQF" secondAttribute="leadingMargin" constant="8" id="HGb-21-qJA"/>
+                                        <constraint firstItem="tol-2P-bmq" firstAttribute="top" secondItem="5tK-pL-mQF" secondAttribute="topMargin" constant="-8" id="IZK-5g-yfl"/>
+                                        <constraint firstItem="KgL-q2-Krq" firstAttribute="leading" secondItem="5tK-pL-mQF" secondAttribute="leadingMargin" constant="18" id="cJS-us-oxK"/>
+                                        <constraint firstItem="KgL-q2-Krq" firstAttribute="top" secondItem="tol-2P-bmq" secondAttribute="bottom" id="wfc-Zz-GcD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="tol-2P-bmq" id="ddG-WR-nRb"/>
+                                    <outlet property="valueLabel" destination="KgL-q2-Krq" id="o40-eb-Sqh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NUm-tN-QfL" id="4Gx-7A-AWt"/>
+                            <outlet property="delegate" destination="NUm-tN-QfL" id="VUR-FN-Dom"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="name" id="uuY-J2-ULg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPU-nF-WWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="314" y="1037"/>
         </scene>
         <!--Star War Fan Boy-->
         <scene sceneID="4F6-0r-16x">
@@ -78,7 +134,6 @@
                     </navigationBar>
                     <connections>
                         <segue destination="5av-vw-QOX" kind="relationship" relationship="rootViewController" id="1oX-xG-vrJ"/>
-                        <segue destination="Slm-KI-MsY" kind="show" identifier="ListSegue" id="teQ-fh-2H2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aj-ZD-SqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,7 +141,4 @@
             <point key="canvasLocation" x="-654" y="286"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="jqM-cp-Zfe"/>
-    </inferredMetricsTieBreakers>
 </document>

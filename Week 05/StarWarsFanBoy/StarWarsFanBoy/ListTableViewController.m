@@ -7,6 +7,7 @@
 //
 
 #import "ListTableViewController.h"
+#import "DetailTableViewController.h"
 #import "StarWarAPI.h"
 #import "WebStarWarAPI.h"
 #import "ModelBase.h"
@@ -15,7 +16,6 @@
 
 @interface ListTableViewController ()
 
-@property (weak, nonatomic) IBOutlet UINavigationItem *navigationItem;
 @property (strong, nonatomic) NSArray *entityList;
 
 @end
@@ -73,6 +73,16 @@
     [[cell textLabel] setText:item.description];
     
     return cell;
+}
+
+#pragma mark - Segues
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+    ModelBase *data = [[self entityList] objectAtIndex:[indexPath row]];
+    
+    DetailTableViewController *destinationView = [segue destinationViewController];
+    [destinationView setData:data];
 }
 
 @end
