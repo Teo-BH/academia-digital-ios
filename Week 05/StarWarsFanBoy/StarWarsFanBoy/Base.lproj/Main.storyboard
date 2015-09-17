@@ -37,7 +37,7 @@
             </objects>
             <point key="canvasLocation" x="-1127" y="1037"/>
         </scene>
-        <!--name-->
+        <!--List Entity-->
         <scene sceneID="fTm-18-ovu">
             <objects>
                 <tableViewController storyboardIdentifier="ListVC" id="Slm-KI-MsY" customClass="ListTableViewController" sceneMemberID="viewController">
@@ -54,7 +54,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="NUm-tN-QfL" kind="show" id="Mge-uB-eQw"/>
+                                    <segue destination="NUm-tN-QfL" kind="show" identifier="DetailSegue" id="Mge-uB-eQw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -63,13 +63,48 @@
                             <outlet property="delegate" destination="Slm-KI-MsY" id="ISQ-xb-O7f"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="name" id="JkH-NN-fBR"/>
+                    <navigationItem key="navigationItem" title="List Entity" id="JkH-NN-fBR">
+                        <barButtonItem key="rightBarButtonItem" image="Settings" id="zEH-x5-2KY">
+                            <connections>
+                                <segue destination="U8L-qf-6cB" kind="show" identifier="SettingSegue" id="vUj-3P-K1C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Mh-1F-jRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-348" y="1037"/>
         </scene>
-        <!--name-->
+        <!--Settings-->
+        <scene sceneID="YKo-aR-dSE">
+            <objects>
+                <tableViewController id="U8L-qf-6cB" customClass="SettingTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LG8-TV-vaj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="SettingCellID" id="fGF-wE-710">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fGF-wE-710" id="rIg-UH-BNc">
+                                    <rect key="frame" x="0.0" y="0.0" width="561" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="U8L-qf-6cB" id="qg9-kS-GNT"/>
+                            <outlet property="delegate" destination="U8L-qf-6cB" id="Omy-aA-g57"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="R1W-SC-gQw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rik-Oy-vsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="1787"/>
+        </scene>
+        <!--Detail Entity-->
         <scene sceneID="Tck-bb-VO4">
             <objects>
                 <tableViewController id="NUm-tN-QfL" customClass="DetailTableViewController" sceneMemberID="viewController">
@@ -118,7 +153,7 @@
                             <outlet property="delegate" destination="NUm-tN-QfL" id="VUR-FN-Dom"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="name" id="uuY-J2-ULg"/>
+                    <navigationItem key="navigationItem" title="Detail Entity" id="uuY-J2-ULg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPU-nF-WWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,4 +176,7 @@
             <point key="canvasLocation" x="-654" y="286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Settings" width="22" height="22"/>
+    </resources>
 </document>

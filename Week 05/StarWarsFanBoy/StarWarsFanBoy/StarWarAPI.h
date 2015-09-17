@@ -8,11 +8,16 @@
 
 #import "EntityMetadata.h"
 #import "AttributeMetadata.h"
+#import "ModelBase.h"
 
 @protocol StarWarAPI <NSObject>
 
 -(NSArray<EntityMetadata *> *)getEntities;
+-(ModelBase *) allocByEntityName:(NSString *)entityName;
+
 -(NSArray *)getEntity:(NSString *)entityName;
 -(NSArray *)getEntity:(NSString *)entityName withPage:(NSInteger)page;
+
+
 
 @end

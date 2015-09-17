@@ -19,6 +19,8 @@
 		B168FA9E1BAB30D0002042F3 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B168FA9D1BAB30D0002042F3 /* DetailTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B168FAA11BAB334B002042F3 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B168FAA01BAB334B002042F3 /* DetailTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		B168FAA41BAB3E97002042F3 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B168FAA31BAB3E97002042F3 /* NSObject+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		B168FAA71BAB4E18002042F3 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B168FAA61BAB4E18002042F3 /* SettingTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B168FAAA1BAB5CD7002042F3 /* SettingAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B168FAA91BAB5CD7002042F3 /* SettingAPI.m */; settings = {ASSET_TAGS = (); }; };
 		B1E6DF031BA9D9A1002BB731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6DF021BA9D9A1002BB731 /* main.m */; };
 		B1E6DF061BA9D9A1002BB731 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6DF051BA9D9A1002BB731 /* AppDelegate.m */; };
 		B1E6DF0C1BA9D9A1002BB731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E6DF0A1BA9D9A1002BB731 /* Main.storyboard */; };
@@ -55,6 +57,10 @@
 		B168FAA01BAB334B002042F3 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
 		B168FAA21BAB3E97002042F3 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
 		B168FAA31BAB3E97002042F3 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		B168FAA51BAB4E18002042F3 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		B168FAA61BAB4E18002042F3 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		B168FAA81BAB5CD7002042F3 /* SettingAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingAPI.h; sourceTree = "<group>"; };
+		B168FAA91BAB5CD7002042F3 /* SettingAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingAPI.m; sourceTree = "<group>"; };
 		B1E6DEFE1BA9D9A1002BB731 /* StarWarsFanBoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsFanBoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E6DF021BA9D9A1002BB731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1E6DF041BA9D9A1002BB731 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,11 +142,13 @@
 				B168FA9D1BAB30D0002042F3 /* DetailTableViewController.m */,
 				B168FA9F1BAB334B002042F3 /* DetailTableViewCell.h */,
 				B168FAA01BAB334B002042F3 /* DetailTableViewCell.m */,
+				B168FAA51BAB4E18002042F3 /* SettingTableViewController.h */,
+				B168FAA61BAB4E18002042F3 /* SettingTableViewController.m */,
 				B1E6DF0A1BA9D9A1002BB731 /* Main.storyboard */,
+				B1E6DF011BA9D9A1002BB731 /* Supporting Files */,
 				B1E6DF0D1BA9D9A1002BB731 /* Assets.xcassets */,
 				B1E6DF0F1BA9D9A1002BB731 /* LaunchScreen.storyboard */,
 				B1E6DF121BA9D9A1002BB731 /* Info.plist */,
-				B1E6DF011BA9D9A1002BB731 /* Supporting Files */,
 			);
 			path = StarWarsFanBoy;
 			sourceTree = "<group>";
@@ -171,6 +179,8 @@
 			children = (
 				B1E6DF1E1BA9DCBF002BB731 /* EntityMetadata.h */,
 				B1E6DF1F1BA9DCBF002BB731 /* EntityMetadata.m */,
+				B168FAA81BAB5CD7002042F3 /* SettingAPI.h */,
+				B168FAA91BAB5CD7002042F3 /* SettingAPI.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -262,6 +272,7 @@
 				B168FA9E1BAB30D0002042F3 /* DetailTableViewController.m in Sources */,
 				B1E6DF201BA9DCBF002BB731 /* EntityMetadata.m in Sources */,
 				B1E6DF061BA9D9A1002BB731 /* AppDelegate.m in Sources */,
+				B168FAAA1BAB5CD7002042F3 /* SettingAPI.m in Sources */,
 				B15F62131BAA04DD00622575 /* Planet.m in Sources */,
 				B15F620A1BA9F1B700622575 /* ModelBase.m in Sources */,
 				B1E6DF271BA9DF77002BB731 /* EntityTableViewController.m in Sources */,
@@ -272,6 +283,7 @@
 				B15F62101BAA00DD00622575 /* NSString+Extension.m in Sources */,
 				B1E6DF241BA9DE51002BB731 /* WebHelper.m in Sources */,
 				B168FAA41BAB3E97002042F3 /* NSObject+Extension.m in Sources */,
+				B168FAA71BAB4E18002042F3 /* SettingTableViewController.m in Sources */,
 				B15F621D1BAA0E6B00622575 /* Specie.m in Sources */,
 				B15F62171BAA073800622575 /* Film.m in Sources */,
 				B1E6DF031BA9D9A1002BB731 /* main.m in Sources */,

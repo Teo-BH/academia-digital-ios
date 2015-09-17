@@ -56,7 +56,7 @@
                 
                 // Transformação em classe (Person, Planets, ...)
                 for (NSDictionary *properties in data) {
-                    ModelBase *model = [[self allocEntity:entityName] initWithDictionary:properties];
+                    ModelBase *model = [[self allocByEntityName:entityName] initWithDictionary:properties];
                     [result addObject:model];
                 }
             }
@@ -90,7 +90,7 @@
     }
 }
 
--(ModelBase *) allocEntity:(NSString *)entityName {
+-(ModelBase *) allocByEntityName:(NSString *)entityName {
     if ([entityName isEqualToString:@"people"]) {
         return [Person alloc];
     } else if ([entityName isEqualToString:@"planets"]) {

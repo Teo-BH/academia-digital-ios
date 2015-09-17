@@ -8,11 +8,15 @@
 
 #import "ListTableViewController.h"
 #import "DetailTableViewController.h"
+#import "SettingTableViewController.h"
 #import "StarWarAPI.h"
 #import "WebStarWarAPI.h"
 #import "ModelBase.h"
+#import "SettingAPI.h"
 
 #define CELL_ID @"CellID"
+#define DETAIL_SEGUE @"DetailSegue"
+#define SETTING_SEGUE @"SettingSegue"
 
 @interface ListTableViewController ()
 
@@ -77,12 +81,31 @@
 
 #pragma mark - Segues
 
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if ([identifier isEqualToString:DETAIL_SEGUE]) {
+#warning TODO: Revisar o read Settings
+        return YES;
+        
+        
+        NSArray *setting = [SettingAPI getActiveSetting:self.entity.name];
+        BOOL result = setting != nil;
+        return result;
+    } else {
+        return YES;
+    }
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
-    ModelBase *data = [[self entityList] objectAtIndex:[indexPath row]];
+    if ([segue.identifier isEqualToString:DETAIL_SEGUE]) {
+        NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+        ModelBase *data = [[self entityList] objectAtIndex:[indexPath row]];
     
-    DetailTableViewController *destinationView = [segue destinationViewController];
-    [destinationView setData:data];
+        DetailTableViewController *destinationView = [segue destinationViewController];
+        [destinationView setData:data];
+    } else if ([segue.identifier isEqualToString:SETTING_SEGUE]) {
+        SettingTableViewController *destinationView = [segue destinationViewController];
+        [destinationView setEntityName:self.entity.name];
+    }
 }
 
 @end
