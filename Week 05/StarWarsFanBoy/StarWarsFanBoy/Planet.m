@@ -15,13 +15,13 @@
     self = [super initWithDictionary:properties withDescriptionName:@"name"];
     if (self && properties) {
         _name = properties[@"name"];
-        _diameter = properties[@"diameter"];
-        _rotationPeriod = properties[@"rotation_period"];
-        _orbitalPeriod = properties[@"orbital_period"];
-        _orbitalPeriod = properties[@"orbital_period"];
+        _diameter = [properties[@"diameter"] integerValue];
+        _rotationPeriod = [properties[@"rotation_period"] integerValue];
+        _orbitalPeriod = [properties[@"orbital_period"] integerValue];
+        _orbitalPeriod = [properties[@"orbital_period"] integerValue];
         _climate = properties[@"climate"];
         _terrain = properties[@"terrain"];
-        _surfaceWater = properties[@"surface_water"];
+        _surfaceWater = [properties[@"surface_water"] integerValue];
     }
     return self;
 }

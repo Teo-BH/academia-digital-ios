@@ -13,5 +13,6 @@
 
 -(NSArray<EntityMetadata *> *)getEntities;
 -(NSArray *)getEntity:(NSString *)entityName;
+-(NSArray *)getEntity:(NSString *)entityName withPage:(NSInteger)page;
 
 @end

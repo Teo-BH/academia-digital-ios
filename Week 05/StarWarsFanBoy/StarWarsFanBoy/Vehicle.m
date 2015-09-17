@@ -19,13 +19,13 @@
         _model = properties[@"model"];
         _vehicleClass = properties[@"vehicle_class"];
         _manufacturer = properties[@"name"];
-        _costInCredits = properties[@"cost_in_credits"];
+        _costInCredits = [properties[@"cost_in_credits"] jsonNumberValue];
         _length = [properties[@"length"] jsonNumberValue];
         _crew = [properties[@"crew"] integerValue];
         _passengers = [properties[@"passengers"] integerValue];
         _maxAtmospheringSpeed = [properties[@"max_atmosphering_speed"] integerValue];
         _cargoCapacity = [properties[@"cargoCapacity"] integerValue];
-        _consumables = properties[@"consumables"];
+        _consumables = [properties[@"consumables"] jsonNumberValue];
     }
     return self;
 }

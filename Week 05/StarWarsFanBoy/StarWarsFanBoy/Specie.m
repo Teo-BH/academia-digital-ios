@@ -7,6 +7,7 @@
 //
 
 #import "Specie.h"
+#import "NSString+Extension.h"
 
 @implementation Specie
 
@@ -17,8 +18,8 @@
         _name = properties[@"name"];
         _classification = properties[@"classification"];
         _designation = properties[@"designation"];
-        _averageHeight = properties[@"average_height"];
-        _averageLifespan = properties[@"average_lifespan"];
+        _averageHeight = [properties[@"average_height"] jsonNumberValue];
+        _averageLifespan = [properties[@"average_lifespan"] jsonNumberValue];
         _eyeColors = properties[@"eye_colors"];
         _hairColors = properties[@"hair_colors"];
         _skinColors = properties[@"skin_colors"];

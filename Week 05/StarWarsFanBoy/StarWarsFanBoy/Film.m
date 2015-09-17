@@ -15,7 +15,7 @@
     self = [super initWithDictionary:properties withDescriptionName:@"title"];
     if (self && properties) {
         _title = properties[@"title"];
-        _episodeID = properties[@"episodeID"];
+        _episodeID = [properties[@"episodeID"] integerValue];
         _openingCrawl = properties[@"openingCrawl"];
         _director = properties[@"director"];
         _producer = properties[@"producer"];

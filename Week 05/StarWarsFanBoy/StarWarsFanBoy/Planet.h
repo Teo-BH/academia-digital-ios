@@ -11,16 +11,16 @@
 @interface Planet : ModelBase
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *diameter;
-@property (nonatomic, copy) NSString *rotationPeriod;
-@property (nonatomic, copy) NSString *orbitalPeriod;
+@property (nonatomic) NSInteger diameter;
+@property (nonatomic) NSInteger rotationPeriod;
+@property (nonatomic) NSInteger orbitalPeriod;
 @property (nonatomic, copy) NSString *gravity;
-@property (nonatomic, copy) NSString *population;
+@property (nonatomic) NSInteger population;
 @property (nonatomic, copy) NSString *climate;
 @property (nonatomic, copy) NSString *terrain;
-@property (nonatomic, copy) NSString *surfaceWater;
+@property (nonatomic) NSInteger surfaceWater;
 
-// TODO: Carregar as propriedades de Planeta
+#warning TODO: Carregar as propriedades de Planeta
 @property (nonatomic, copy) NSArray *residents;
 @property (nonatomic, copy) NSArray *films;
 

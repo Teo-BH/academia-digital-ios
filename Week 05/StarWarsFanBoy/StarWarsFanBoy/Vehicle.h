@@ -14,15 +14,15 @@
 @property (nonatomic, copy) NSString *model;
 @property (nonatomic, copy) NSString *vehicleClass;
 @property (nonatomic, copy) NSString *manufacturer;
-@property (nonatomic, copy) NSString *costInCredits;
+@property (nonatomic, copy) NSNumber *costInCredits;
 @property (nonatomic, copy) NSNumber *length;
 @property (nonatomic) NSInteger crew;
 @property (nonatomic) NSInteger passengers;
 @property (nonatomic) NSInteger maxAtmospheringSpeed;
 @property (nonatomic) NSInteger cargoCapacity;
-@property (nonatomic, copy) NSString *consumables;
+@property (nonatomic, copy) NSNumber *consumables;
 
-// TODO: Carregar as propriedades de Planeta
+#warning TODO: Carregar as propriedades de Planeta
 @property (nonatomic, copy) NSArray *films;
 @property (nonatomic, copy) NSArray *pilots;
 

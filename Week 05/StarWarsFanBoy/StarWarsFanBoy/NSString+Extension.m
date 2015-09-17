@@ -19,11 +19,15 @@
 }
 
 -(NSNumber *)jsonNumberValue {
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    formatter.numberStyle = NSNumberFormatterDecimalStyle;
+    if ([self isEqualToString:@"unknown"]) {
+        return nil;
+    } else {
+        NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+        formatter.numberStyle = NSNumberFormatterDecimalStyle;
 
-    NSNumber *number = [formatter numberFromString:self];
-    return number;
+        NSNumber *number = [formatter numberFromString:self];
+        return number;
+    }
 }
 
 

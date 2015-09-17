@@ -11,12 +11,12 @@
 @interface Film : ModelBase
 
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSNumber *episodeID;
+@property (nonatomic) NSInteger episodeID;
 @property (nonatomic, copy) NSString *openingCrawl;
 @property (nonatomic, copy) NSString *director;
 @property (nonatomic, copy) NSString *producer;
 
-// TODO: Carregar as propriedades de Filme
+#warning TODO: Carregar as propriedades de Filme
 @property (nonatomic, copy) NSArray *species;
 @property (nonatomic, copy) NSArray *starships;
 @property (nonatomic, copy) NSArray *vehicles;

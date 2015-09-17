@@ -14,7 +14,7 @@
 @property (nonatomic, copy) NSString *model;
 @property (nonatomic, copy) NSString *starshipClass;
 @property (nonatomic, copy) NSString *manufacturer;
-@property (nonatomic, copy) NSString *costInCredits;
+@property (nonatomic, copy) NSNumber *costInCredits;
 @property (nonatomic, copy) NSString *length;
 @property (nonatomic, copy) NSString *crew;
 @property (nonatomic, copy) NSString *passengers;
@@ -24,7 +24,7 @@
 @property (nonatomic, copy) NSString *cargoCapacity;
 @property (nonatomic, copy) NSString *consumables;
 
-// TODO: Carregar as propriedades de Nave
+#warning TODO: Carregar as propriedades de Nave
 @property (nonatomic, copy) NSArray *films;
 @property (nonatomic, copy) NSArray *pilots;
 

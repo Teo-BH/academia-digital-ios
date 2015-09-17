@@ -21,7 +21,7 @@
         _skinColor = properties[@"skin_color"];
         _height = [properties[@"height"] integerValue];
         _mass = [properties[@"mass"] integerValue];
-        _hairColor = [properties[@"hair_color"] integerValue];
+        _hairColor = properties[@"hair_color"];
     }
     return self;
 }

@@ -7,6 +7,7 @@
 //
 
 #import "Starship.h"
+#import "NSString+Extension.h"
 
 @implementation Starship
 
@@ -18,7 +19,7 @@
         _model = properties[@"model"];
         _starshipClass = properties[@"starship_class"];
         _manufacturer = properties[@"manufacturer"];
-        _costInCredits = properties[@"cost_in_credits"];
+        _costInCredits = [properties[@"cost_in_credits"] jsonNumberValue];
         _length = properties[@"length"];
         _crew = properties[@"crew"];
         _passengers = properties[@"passengers"];
