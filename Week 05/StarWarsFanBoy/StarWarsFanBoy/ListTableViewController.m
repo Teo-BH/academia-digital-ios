@@ -34,9 +34,26 @@
     [[self navigationItem] setTitle:entityName];
     
     // Carrega os dados
+    [self getEntity:entityName];
+}
+
+-(void)getEntity:(NSString *)entityName {
+    // API Class
     id<StarWarAPI> api = [[WebStarWarAPI alloc] init];
-    NSArray *data = [api getEntity:entityName];
+    
+    // SYNC => Carrega os dados da 1˚ página
+    NSArray *data = [api getEntity:entityName withPage:1];
     [self setEntityList:data];
+    
+    // ASYNC => Carrega os dados de 'todas' as páginas
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSArray *fullData = [api getEntity:entityName];
+        
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            [self setEntityList:fullData];
+            [[self tableView] reloadData];
+        });
+    });
 }
 
 #pragma mark - TableViewController
