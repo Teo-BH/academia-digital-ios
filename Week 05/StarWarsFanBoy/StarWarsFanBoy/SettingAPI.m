@@ -11,31 +11,25 @@
 @implementation SettingAPI
 
 +(NSArray *)getActiveSetting:(NSString *)entityName {
-    // Define o caminho - Documents
-    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
-    NSString *fileName = [NSString stringWithFormat:@"%@-setting", entityName];
-    path = [path stringByAppendingPathComponent:fileName];
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-        // Deserializando
-        NSData *dataBin = [NSData dataWithContentsOfFile:path];
-        NSArray *result = [NSKeyedUnarchiver unarchiveObjectWithData:dataBin];
-        return result;
-    } else {
-        return nil;
-    }
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *preferenceName = [self preferenceName:entityName];
+    NSArray *result = [userDefaults objectForKey:preferenceName];
+    return  result;
 }
 
 +(BOOL)saveActiveSetting:(NSArray *)settings withEntityName:(NSString *)entityName {
-    // Define o caminho - Documents
-    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
-    NSString *fileName = [NSString stringWithFormat:@"%@-setting", entityName];
-    path = [path stringByAppendingPathComponent:fileName];
+    // Escreve as Preferências
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *preferenceName = [self preferenceName:entityName];
+    [userDefaults setObject:settings forKey:preferenceName];
     
-    // Serialização para arquivo
-    BOOL result = [NSKeyedArchiver archiveRootObject:settings toFile:path];
-    return result;
+    // Força a atualização
+    BOOL status = [userDefaults synchronize];
+    return status;
 }
 
++(NSString *)preferenceName:(NSString *)entityName {
+    return [NSString stringWithFormat:@"%@_preference", entityName];
+}
 
 @end

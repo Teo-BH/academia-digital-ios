@@ -55,7 +55,6 @@
 }
 
 -(void)saveSettings {
-#warning TODO: Validar o salve Settings
     NSMutableArray *actives = [NSMutableArray array];
     for (NSString *propertyName in [[self dictionary] allKeys]) {
         NSNumber *value = [[self dictionary] objectForKey:propertyName];
@@ -66,7 +65,7 @@
     }
     
     // Salva os Settings
-    [SettingAPI saveActiveSetting:actives withFileName:self.entityName];
+    [SettingAPI saveActiveSetting:actives  withEntityName:self.entityName];
 }
 
 #pragma mark TableViewController
@@ -102,7 +101,7 @@
     
     // Atualiza o Dicionário (memória)
     NSString *propertyName = [[[self dictionary] allKeys] objectAtIndex:[indexPath row]];
-    NSNumber *value = [NSNumber numberWithBool:YES];
+    NSNumber *value = [NSNumber numberWithBool:propertyActive];
     self.dictionary[propertyName] = value;
 }
 

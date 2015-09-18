@@ -10,7 +10,7 @@
 
 @interface SettingAPI : UITableViewController
 
-+(NSArray *)getActiveSetting:(NSString *)fileName;
-+(BOOL)saveActiveSetting:(NSArray *)settings withFileName:(NSString *)fileName;
++(NSArray *)getActiveSetting:(NSString *)entityName;
++(BOOL)saveActiveSetting:(NSArray *)settings withEntityName:(NSString *)entityName;
 
 @end

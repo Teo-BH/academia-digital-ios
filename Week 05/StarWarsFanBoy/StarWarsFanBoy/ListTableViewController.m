@@ -83,10 +83,6 @@
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     if ([identifier isEqualToString:DETAIL_SEGUE]) {
-#warning TODO: Revisar o read Settings
-        return YES;
-        
-        
         NSArray *setting = [SettingAPI getActiveSetting:self.entity.name];
         BOOL result = setting != nil;
         return result;
@@ -101,7 +97,7 @@
         ModelBase *data = [[self entityList] objectAtIndex:[indexPath row]];
     
         DetailTableViewController *destinationView = [segue destinationViewController];
-        [destinationView setData:data];
+        [destinationView setEntityName:self.entity.name withData:data];
     } else if ([segue.identifier isEqualToString:SETTING_SEGUE]) {
         SettingTableViewController *destinationView = [segue destinationViewController];
         [destinationView setEntityName:self.entity.name];

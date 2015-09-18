@@ -11,6 +11,6 @@
 
 @interface DetailTableViewController : UITableViewController
 
-@property (nonatomic, strong) ModelBase *data;
+-(void)setEntityName:(NSString *)entityName withData:(ModelBase *)data;
 
 @end
