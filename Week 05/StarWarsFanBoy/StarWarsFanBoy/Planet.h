@@ -20,8 +20,10 @@
 @property (nonatomic, copy) NSString *terrain;
 @property (nonatomic) NSInteger surfaceWater;
 
+/*
 #warning TODO: Carregar as propriedades de Planeta
 @property (nonatomic, copy) NSArray *residents;
 @property (nonatomic, copy) NSArray *films;
+*/
 
 @end

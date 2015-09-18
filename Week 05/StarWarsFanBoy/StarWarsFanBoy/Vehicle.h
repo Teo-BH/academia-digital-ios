@@ -22,8 +22,10 @@
 @property (nonatomic) NSInteger cargoCapacity;
 @property (nonatomic, copy) NSNumber *consumables;
 
+/*
 #warning TODO: Carregar as propriedades de Planeta
 @property (nonatomic, copy) NSArray *films;
 @property (nonatomic, copy) NSArray *pilots;
+*/
 
 @end

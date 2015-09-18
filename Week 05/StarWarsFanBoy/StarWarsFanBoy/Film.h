@@ -16,11 +16,13 @@
 @property (nonatomic, copy) NSString *director;
 @property (nonatomic, copy) NSString *producer;
 
+/*
 #warning TODO: Carregar as propriedades de Filme
 @property (nonatomic, copy) NSArray *species;
 @property (nonatomic, copy) NSArray *starships;
 @property (nonatomic, copy) NSArray *vehicles;
 @property (nonatomic, copy) NSArray *characters;
 @property (nonatomic, copy) NSArray *planets;
+*/
 
 @end

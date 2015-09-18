@@ -20,11 +20,13 @@
 @property (nonatomic) NSInteger mass;
 @property (nonatomic, copy) NSString *hairColor;
 
+/*
 #warning TODO: Carregar as propriedades de Pessoa
 @property (nonatomic, copy) NSString *homeworld;
 @property (nonatomic, copy) NSArray *films;
 @property (nonatomic, copy) NSArray *species;
 @property (nonatomic, copy) NSArray *starships;
 @property (nonatomic, copy) NSArray *vehicles;
+*/
 
 @end

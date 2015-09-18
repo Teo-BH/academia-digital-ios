@@ -19,13 +19,22 @@
 #define DETAIL_SEGUE @"DetailSegue"
 #define SETTING_SEGUE @"SettingSegue"
 
-@interface ListTableViewController ()
+@interface ListTableViewController () <UISearchResultsUpdating>
 
-@property (strong, nonatomic) NSArray *entityList;
+@property (strong, nonatomic) NSArray *fullEntityList;
+@property (strong, nonatomic) NSMutableArray *filteredEntityList;
+
+@property (strong, nonatomic) UISearchController *resultSearchController;
 
 @end
 
 @implementation ListTableViewController
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self setResultSearchController:[self getSearchController]];
+}
 
 #pragma mark - Properties (Segue)
 
@@ -48,14 +57,16 @@
     
     // SYNC => Carrega os dados da 1˚ página
     NSArray *data = [api getEntity:entityName withPage:1];
-    [self setEntityList:data];
+    [self setFullEntityList:data];
+    self.filteredEntityList = [NSMutableArray arrayWithCapacity:[self.fullEntityList count]];
     
     // ASYNC => Carrega os dados de 'todas' as páginas
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSArray *fullData = [api getEntity:entityName];
         
         dispatch_async(dispatch_get_main_queue(), ^(void) {
-            [self setEntityList:fullData];
+            [self setFullEntityList:fullData];
+            self.filteredEntityList = [NSMutableArray arrayWithCapacity:[self.fullEntityList count]];
             [[self tableView] reloadData];
         });
     });
@@ -73,6 +84,9 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID];
+    if ( cell == nil ) {
+        cell = [[ListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELL_ID];
+    }
     
     ModelBase *item = [[self entityList] objectAtIndex:[indexPath row]];
     [cell setName:item.description withLastAccess:item.lastAccess];
@@ -127,6 +141,42 @@
         SettingTableViewController *destinationView = [segue destinationViewController];
         [destinationView setEntityName:self.entity.name];
     }
+}
+
+#pragma mark - UISearchResultsUpdating
+
+-(UISearchController *)getSearchController {
+    UISearchController *controller = [[UISearchController alloc] initWithSearchResultsController:nil];
+    controller.searchResultsUpdater = self;
+    controller.dimsBackgroundDuringPresentation = NO;
+    [controller.searchBar sizeToFit];
+    
+    self.tableView.tableHeaderView = controller.searchBar;
+    self.definesPresentationContext = YES;
+    
+    return controller;
+}
+
+-(NSArray *)entityList {
+    if (self.resultSearchController.active) {
+        return self.filteredEntityList;
+    } else {
+        return self.fullEntityList;
+    }
+}
+
+-(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    [self filterContentForSearchText:searchController.searchBar.text];
+    [self.tableView reloadData];
+}
+
+-(void)filterContentForSearchText:(NSString*)searchText {
+    // Limpa o array filtrado
+    [self.filteredEntityList removeAllObjects];
+    
+    // Realiza um novo filtro
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.description contains[c] %@", searchText];
+    self.filteredEntityList = [NSMutableArray arrayWithArray:[self.fullEntityList filteredArrayUsingPredicate:predicate]];
 }
 
 @end

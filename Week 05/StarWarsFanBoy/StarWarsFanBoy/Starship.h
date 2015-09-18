@@ -24,8 +24,10 @@
 @property (nonatomic, copy) NSString *cargoCapacity;
 @property (nonatomic, copy) NSString *consumables;
 
+/*
 #warning TODO: Carregar as propriedades de Nave
 @property (nonatomic, copy) NSArray *films;
 @property (nonatomic, copy) NSArray *pilots;
+*/
 
 @end

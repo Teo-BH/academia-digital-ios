@@ -20,9 +20,11 @@
 @property (nonatomic, copy) NSString *skinColors;
 @property (nonatomic, copy) NSString *language;
 
+/*
 #warning TODO: Carregar as propriedades de Specie
 @property (nonatomic, copy) NSString *homeworld;
 @property (nonatomic, copy) NSArray *people;
 @property (nonatomic, copy) NSArray *films;
+*/
 
 @end

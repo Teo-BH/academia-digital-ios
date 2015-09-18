@@ -17,10 +17,6 @@
 -(NSDate *)getAccessDateWithEntityName:(NSString *)entityName withUrl:(NSString *)url;
 -(void)setAccessDateWithEntityName:(NSString *)entityName withUrl:(NSString *)url withDate:(NSDate *)date;
 
-// CoreData Properties
-@property (readonly) AppDelegate *appDelegate;
-@property (readonly) NSManagedObjectContext *context;
-
 @end
 
 @implementation ModelBase {
