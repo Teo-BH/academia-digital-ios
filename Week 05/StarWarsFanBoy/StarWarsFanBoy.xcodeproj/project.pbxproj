@@ -21,6 +21,10 @@
 		B168FAA41BAB3E97002042F3 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B168FAA31BAB3E97002042F3 /* NSObject+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		B168FAA71BAB4E18002042F3 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B168FAA61BAB4E18002042F3 /* SettingTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B168FAAA1BAB5CD7002042F3 /* SettingAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B168FAA91BAB5CD7002042F3 /* SettingAPI.m */; settings = {ASSET_TAGS = (); }; };
+		B1BDA5431BAC397D005B2E0C /* StarWarsFanBoy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1BDA5411BAC397D005B2E0C /* StarWarsFanBoy.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		B1BDA56E1BAC3C9A005B2E0C /* UserAccess+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BDA56B1BAC3C9A005B2E0C /* UserAccess+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		B1BDA56F1BAC3C9A005B2E0C /* UserAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BDA56D1BAC3C9A005B2E0C /* UserAccess.m */; settings = {ASSET_TAGS = (); }; };
+		B1BDA5731BAC4D53005B2E0C /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BDA5721BAC4D53005B2E0C /* ListTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		B1E6DF031BA9D9A1002BB731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6DF021BA9D9A1002BB731 /* main.m */; };
 		B1E6DF061BA9D9A1002BB731 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6DF051BA9D9A1002BB731 /* AppDelegate.m */; };
 		B1E6DF0C1BA9D9A1002BB731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E6DF0A1BA9D9A1002BB731 /* Main.storyboard */; };
@@ -61,6 +65,13 @@
 		B168FAA61BAB4E18002042F3 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
 		B168FAA81BAB5CD7002042F3 /* SettingAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingAPI.h; sourceTree = "<group>"; };
 		B168FAA91BAB5CD7002042F3 /* SettingAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingAPI.m; sourceTree = "<group>"; };
+		B1BDA5421BAC397D005B2E0C /* StarWarsFanBoy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarWarsFanBoy.xcdatamodel; sourceTree = "<group>"; };
+		B1BDA56A1BAC3C9A005B2E0C /* UserAccess+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserAccess+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B1BDA56B1BAC3C9A005B2E0C /* UserAccess+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserAccess+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B1BDA56C1BAC3C9A005B2E0C /* UserAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccess.h; sourceTree = "<group>"; };
+		B1BDA56D1BAC3C9A005B2E0C /* UserAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccess.m; sourceTree = "<group>"; };
+		B1BDA5711BAC4D53005B2E0C /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		B1BDA5721BAC4D53005B2E0C /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
 		B1E6DEFE1BA9D9A1002BB731 /* StarWarsFanBoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsFanBoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E6DF021BA9D9A1002BB731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1E6DF041BA9D9A1002BB731 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +123,18 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		B1BDA5701BAC3CA6005B2E0C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B1BDA5411BAC397D005B2E0C /* StarWarsFanBoy.xcdatamodeld */,
+				B1BDA56A1BAC3C9A005B2E0C /* UserAccess+CoreDataProperties.h */,
+				B1BDA56B1BAC3C9A005B2E0C /* UserAccess+CoreDataProperties.m */,
+				B1BDA56C1BAC3C9A005B2E0C /* UserAccess.h */,
+				B1BDA56D1BAC3C9A005B2E0C /* UserAccess.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		B1E6DEF51BA9D9A0002BB731 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +161,8 @@
 				B1E6DF261BA9DF77002BB731 /* EntityTableViewController.m */,
 				B15F620B1BA9F7C400622575 /* ListTableViewController.h */,
 				B15F620C1BA9F7C400622575 /* ListTableViewController.m */,
+				B1BDA5711BAC4D53005B2E0C /* ListTableViewCell.h */,
+				B1BDA5721BAC4D53005B2E0C /* ListTableViewCell.m */,
 				B168FA9C1BAB30D0002042F3 /* DetailTableViewController.h */,
 				B168FA9D1BAB30D0002042F3 /* DetailTableViewController.m */,
 				B168FA9F1BAB334B002042F3 /* DetailTableViewCell.h */,
@@ -164,6 +189,7 @@
 		B1E6DF181BA9D9CE002BB731 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B1BDA5701BAC3CA6005B2E0C /* CoreData */,
 				B1E6DF211BA9DE40002BB731 /* Helpers */,
 				B1E6DF1D1BA9DC98002BB731 /* Settings */,
 				B15F62041BA9EA5400622575 /* Model */,
@@ -277,6 +303,7 @@
 				B15F620A1BA9F1B700622575 /* ModelBase.m in Sources */,
 				B1E6DF271BA9DF77002BB731 /* EntityTableViewController.m in Sources */,
 				B168FAA11BAB334B002042F3 /* DetailTableViewCell.m in Sources */,
+				B1BDA56E1BAC3C9A005B2E0C /* UserAccess+CoreDataProperties.m in Sources */,
 				B15F62071BA9EA7300622575 /* Person.m in Sources */,
 				B1E6DF1B1BA9DA0D002BB731 /* WebStarWarAPI.m in Sources */,
 				B15F621A1BAA080300622575 /* Vehicle.m in Sources */,
@@ -284,10 +311,13 @@
 				B1E6DF241BA9DE51002BB731 /* WebHelper.m in Sources */,
 				B168FAA41BAB3E97002042F3 /* NSObject+Extension.m in Sources */,
 				B168FAA71BAB4E18002042F3 /* SettingTableViewController.m in Sources */,
+				B1BDA5431BAC397D005B2E0C /* StarWarsFanBoy.xcdatamodeld in Sources */,
 				B15F621D1BAA0E6B00622575 /* Specie.m in Sources */,
 				B15F62171BAA073800622575 /* Film.m in Sources */,
 				B1E6DF031BA9D9A1002BB731 /* main.m in Sources */,
 				B15F62201BAA0FA600622575 /* Starship.m in Sources */,
+				B1BDA5731BAC4D53005B2E0C /* ListTableViewCell.m in Sources */,
+				B1BDA56F1BAC3C9A005B2E0C /* UserAccess.m in Sources */,
 				B15F620D1BA9F7C400622575 /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +470,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B1BDA5411BAC397D005B2E0C /* StarWarsFanBoy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B1BDA5421BAC397D005B2E0C /* StarWarsFanBoy.xcdatamodel */,
+			);
+			currentVersion = B1BDA5421BAC397D005B2E0C /* StarWarsFanBoy.xcdatamodel */;
+			path = StarWarsFanBoy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B1E6DEF61BA9D9A0002BB731 /* Project object */;
 }

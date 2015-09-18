@@ -14,6 +14,8 @@
 @property (strong, nonatomic) NSDate *edited;
 @property (strong, nonatomic) NSURL *url;
 
+@property (nonatomic) NSDate *lastAccess;
+
 - (instancetype)initWithDictionary:(NSDictionary *)properties;
 - (instancetype)initWithDictionary:(NSDictionary *)properties withDescriptionName:(NSString *)descriptionName;
 

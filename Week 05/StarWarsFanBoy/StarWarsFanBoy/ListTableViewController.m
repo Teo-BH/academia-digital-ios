@@ -7,6 +7,7 @@
 //
 
 #import "ListTableViewController.h"
+#import "ListTableViewCell.h"
 #import "DetailTableViewController.h"
 #import "SettingTableViewController.h"
 #import "StarWarAPI.h"
@@ -71,10 +72,10 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID];
+    ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID];
     
     ModelBase *item = [[self entityList] objectAtIndex:[indexPath row]];
-    [[cell textLabel] setText:item.description];
+    [cell setName:item.description withLastAccess:item.lastAccess];
     
     return cell;
 }
@@ -110,11 +111,18 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:DETAIL_SEGUE]) {
+        // Define o item selecionado
         NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
         ModelBase *data = [[self entityList] objectAtIndex:[indexPath row]];
     
+        // Atualiza a data do último acesso
+        [data setLastAccess:[NSDate date]];
+        [[self tableView] reloadRowsAtIndexPaths:@[ indexPath ] withRowAnimation:NO];
+        
+        // Preenche as propriedades de destino
         DetailTableViewController *destinationView = [segue destinationViewController];
         [destinationView setEntityName:self.entity.name withData:data];
+        
     } else if ([segue.identifier isEqualToString:SETTING_SEGUE]) {
         SettingTableViewController *destinationView = [segue destinationViewController];
         [destinationView setEntityName:self.entity.name];
