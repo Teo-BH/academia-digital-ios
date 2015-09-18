@@ -85,10 +85,27 @@
     if ([identifier isEqualToString:DETAIL_SEGUE]) {
         NSArray *setting = [SettingAPI getActiveSetting:self.entity.name];
         BOOL result = setting != nil;
+        if (!result) {
+            [self alertNotPreferences];
+        }
         return result;
     } else {
         return YES;
     }
+}
+
+-(void)alertNotPreferences {
+    UIAlertController * alert=   [UIAlertController alertControllerWithTitle:@"Preferências"
+                                                                     message:@"Defina as preferências para exibir os detalhes"
+                                                              preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
+                                                       style:UIAlertActionStyleCancel
+                                                     handler:^(UIAlertAction *action) {
+                                                         [alert dismissViewControllerAnimated:YES completion:nil];
+                                                     }];
+    [alert addAction:okAction];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
