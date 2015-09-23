@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RvQ-CR-f7S"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uhu-yz-6ZM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IzA-Qe-9iW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="jxA-PV-Tpw">
+                                <rect key="frame" x="0.0" y="425" width="600" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdl-kR-veK">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                        <state key="normal" title="Adicionar"/>
+                                        <connections>
+                                            <action selector="addGoat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GKQ-a9-CJK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nV-Fl-F5L">
+                                        <rect key="frame" x="310" y="0.0" width="290" height="50"/>
+                                        <state key="normal" title="Remover"/>
+                                        <connections>
+                                            <action selector="removeGoat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilc-7S-eq3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DYq-pY-E8o"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="myE-ZX-ojT">
+                                <rect key="frame" x="0.0" y="20" width="600" height="405"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cabra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jv-kS-ZB9">
+                                        <rect key="frame" x="277" y="0.0" width="46" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Goat" translatesAutoresizingMaskIntoConstraints="NO" id="xAB-AB-3D7">
+                                        <rect key="frame" x="0.0" y="14" width="600" height="391"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Nlh-fe-fg2">
+                                <rect key="frame" x="0.0" y="475" width="600" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="un6-jf-l0G"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jxA-PV-Tpw" firstAttribute="top" secondItem="myE-ZX-ojT" secondAttribute="bottom" id="4Bz-jT-LYQ"/>
+                            <constraint firstAttribute="trailing" secondItem="myE-ZX-ojT" secondAttribute="trailing" id="8MM-Gf-Xca"/>
+                            <constraint firstItem="myE-ZX-ojT" firstAttribute="leading" secondItem="IzA-Qe-9iW" secondAttribute="leading" id="IgG-6T-QNy"/>
+                            <constraint firstItem="Nlh-fe-fg2" firstAttribute="leading" secondItem="IzA-Qe-9iW" secondAttribute="leadingMargin" id="M2T-ma-Wwt"/>
+                            <constraint firstItem="jxA-PV-Tpw" firstAttribute="leading" secondItem="IzA-Qe-9iW" secondAttribute="leading" id="Uv0-iR-2Rq"/>
+                            <constraint firstItem="myE-ZX-ojT" firstAttribute="top" secondItem="RvQ-CR-f7S" secondAttribute="bottom" id="Xse-BI-MRV"/>
+                            <constraint firstAttribute="trailing" secondItem="Nlh-fe-fg2" secondAttribute="trailing" id="alL-AQ-ien"/>
+                            <constraint firstItem="Uhu-yz-6ZM" firstAttribute="top" secondItem="Nlh-fe-fg2" secondAttribute="bottom" id="dqf-C7-plG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nlh-fe-fg2" secondAttribute="trailing" id="gWa-Do-hzW"/>
+                            <constraint firstItem="Nlh-fe-fg2" firstAttribute="top" secondItem="jxA-PV-Tpw" secondAttribute="bottom" id="msg-Rq-VjI"/>
+                            <constraint firstAttribute="trailing" secondItem="jxA-PV-Tpw" secondAttribute="trailing" id="v8a-fY-RQO"/>
+                            <constraint firstItem="Nlh-fe-fg2" firstAttribute="leading" secondItem="IzA-Qe-9iW" secondAttribute="leading" id="wHM-OL-GJP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="M2T-ma-Wwt"/>
+                                <exclude reference="gWa-Do-hzW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="goatStackView" destination="Nlh-fe-fg2" id="xMJ-4d-x3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Goat" width="900" height="600"/>
+    </resources>
+</document>
