@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="Acesso" representedClassName="Acesso" syncable="YES">
+        <attribute name="id_grupo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_marca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qtde_acesso" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Grupo" representedClassName="Grupo" syncable="YES">
+        <attribute name="date_last_access" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fipe_marca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_marca" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="grupo_veiculo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Veiculo" inverseName="veiculo_grupo" inverseEntity="Veiculo" syncable="YES"/>
+    </entity>
+    <entity name="Marca" representedClassName="Marca" syncable="YES">
+        <attribute name="date_last_access" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="date_sync" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fipe_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="status_sync" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="marca_veiculo" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Veiculo" inverseName="veiculo_marca" inverseEntity="Veiculo" syncable="YES"/>
+    </entity>
+    <entity name="Modelo" representedClassName="Modelo" syncable="YES">
+        <attribute name="ano_modelo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="combustivel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fipe_codigo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fipe_marca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="marca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="referencia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="veiculo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="modelo_veiculo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Veiculo" inverseName="veiculo_modelo" inverseEntity="Veiculo" syncable="YES"/>
+    </entity>
+    <entity name="Veiculo" representedClassName="Veiculo" syncable="YES">
+        <attribute name="fipe_marca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fipe_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key_grupo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="marca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="veiculo_grupo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Grupo" inverseName="grupo_veiculo" inverseEntity="Grupo" syncable="YES"/>
+        <relationship name="veiculo_marca" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Marca" inverseName="marca_veiculo" inverseEntity="Marca" syncable="YES"/>
+        <relationship name="veiculo_modelo" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Modelo" inverseName="modelo_veiculo" inverseEntity="Modelo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Grupo" positionX="-56" positionY="72" width="128" height="133"/>
+        <element name="Marca" positionX="-263" positionY="-153" width="128" height="178"/>
+        <element name="Modelo" positionX="-243" positionY="366" width="128" height="223"/>
+        <element name="Veiculo" positionX="-272" positionY="83" width="128" height="193"/>
+        <element name="Acesso" positionX="-135" positionY="36" width="128" height="90"/>
+    </elements>
+</model>
