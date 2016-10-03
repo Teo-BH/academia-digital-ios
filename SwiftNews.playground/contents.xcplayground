@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Hello'/>
+        <page name='Variáveis e Constantes'/>
+        <page name='Operadores'/>
+        <page name='String'/>
+        <page name='Collection Types'/>
+        <page name='Tuplas'/>
+        <page name='Condicionais'/>
+        <page name='Controle de fluxo'/>
+        <page name='Funções'/>
+        <page name='Closures'/>
+        <page name='Enums e Structs'/>
+        <page name='POO'/>
+        <page name='Optionals e type casting'/>
+        <page name='Type Casting'/>
+    </pages>
+</playground>
